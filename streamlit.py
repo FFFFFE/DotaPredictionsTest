@@ -15,13 +15,13 @@ def load_lottieurl(url):
 
 lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_iv4dsx3q.json")
 
-with open("../data/heroes_dict.txt", 'r') as file:
+with open("heroes_dict.txt", 'r') as file:
     heroes_dict = eval(file.read())
 
-with open("../data/teams_dict.txt", 'r', encoding='utf-8') as file:
+with open("teams_dict.txt", 'r', encoding='utf-8') as file:
      teams_dict = eval(file.read())
 
-with open("../data/teamid_stats.txt", 'r', encoding='utf-8') as file:
+with open("teamid_stats.txt", 'r', encoding='utf-8') as file:
     teamid_stats = eval(file.read())
 
 heroes_list = list(heroes_dict.keys())

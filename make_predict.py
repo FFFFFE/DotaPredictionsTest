@@ -4,18 +4,18 @@ import joblib
 from catboost import CatBoostClassifier
 from numpy import nan
 
-teams_scaller = joblib.load("../data/teams_scaller.save")
+teams_scaller = joblib.load("teams_scaller.save")
 
 from_file = CatBoostClassifier()
-clf = from_file.load_model("../data/MAIN_CAT_CLF", format = 'cbm')
+clf = from_file.load_model("MAIN_CAT_CLF", format='cbm')
 
-with open("../data/heroes_dict.txt", 'r') as file:
+with open("heroes_dict.txt", 'r') as file:
     heroes_dict = eval(file.read())
 
-with open("../data/teams_dict.txt", 'r', encoding='utf-8') as file:
+with open("teams_dict.txt", 'r', encoding='utf-8') as file:
      teams_dict = eval(file.read())
 
-with open("../data/teamid_stats.txt", 'r', encoding='utf-8') as file:
+with open("teamid_stats.txt", 'r', encoding='utf-8') as file:
     teamid_stats = eval(file.read())
 
 
