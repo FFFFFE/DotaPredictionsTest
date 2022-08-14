@@ -2,9 +2,11 @@ import pandas as pd
 import numpy as np
 import joblib
 from catboost import CatBoostClassifier
+import os
 from numpy import nan
 
-teams_scaller = joblib.load(r".\data\teams_scaller.save")
+#teams_scaller = joblib.load(r".\data\teams_scaller.save")
+teams_scaller = joblib.load(os.path.abspath(r"data\teams_scaller.save"))
 
 from_file = CatBoostClassifier()
 clf = from_file.load_model(r".\data\MAIN_CAT_CLF", format='cbm')
