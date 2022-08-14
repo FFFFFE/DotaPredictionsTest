@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
 import make_predict
+import os
 from numpy import nan
 
 #streamlit run streamlit.py
@@ -14,13 +15,13 @@ def load_lottieurl(url):
 
 lottie_coding = load_lottieurl("https://assets9.lottiefiles.com/packages/lf20_iv4dsx3q.json")
 
-with open(r".\data\heroes_dict.txt", 'r') as file:
+with open(os.path.abspath("data/heroes_dict.txt"), 'r') as file:
     heroes_dict = eval(file.read())
 
-with open(r".\data\teams_dict.txt", 'r', encoding='utf-8') as file:
+with open(os.path.abspath("data/teams_dict.txt"), 'r', encoding='utf-8') as file:
      teams_dict = eval(file.read())
 
-with open(r".\data\teamid_stats.txt", 'r', encoding='utf-8') as file:
+with open(os.path.abspath("data/teamid_stats.txt"), 'r', encoding='utf-8') as file:
     teamid_stats = eval(file.read())
 
 heroes_list = list(heroes_dict.keys())
