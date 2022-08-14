@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/DotaPredictions.iml" filepath="$PROJECT_DIR$/.idea/DotaPredictions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DotaWinnderPrediction.iml" filepath="$PROJECT_DIR$/.idea/DotaWinnderPrediction.iml" />
     </modules>
   </component>
 </project>
