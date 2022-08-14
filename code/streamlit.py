@@ -46,19 +46,23 @@ with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
-        rad_team = st.selectbox("Radiant team name: ", teams_list)
-        rad_pick = st.multiselect("Choose 5 heroes for Radiant team: ", heroes_list,
+        rad_team = st.selectbox("Команда Radiant: ", teams_list)
+        rad_pick = st.multiselect("Выберите 5 героев команды Radiant: ", heroes_list,
                        ['Void Spirit', 'Jakiro', 'Batrider', 'Weaver', 'Enigma'])
 
     with right_column:
-        dire_team = st.selectbox("Dire team name: ", tundra_list)
-        dire_pick = st.multiselect("Choose 5 heroes for Dire team: ", heroes_list,
+        dire_team = st.selectbox("Команда Dire: ", tundra_list)
+        dire_pick = st.multiselect("Выберите 5 героев команды Dire: ", heroes_list,
                                    ['Io', 'Razor', 'Zeus', 'Lycan', 'Doom'])
 
-    is_rad_win = make_predict.make_predict(rad_pick, dire_pick, rad_team, dire_team)
-    winner = [f'Победит команда {dire_team}', f'Победит команда {rad_team}'][is_rad_win]
+    if len(rad_pick) == len(dire_pick) == 5:
+        is_rad_win = make_predict.make_predict(rad_pick, dire_pick, rad_team, dire_team)
+        winner = [f'Победит команда {dire_team}', f'Победит команда {rad_team}'][is_rad_win]
 
     if(st.button("Сделать предсказание")):
-        st.success(winner)
+        if len(rad_pick) == len(dire_pick) == 5:
+            st.success(winner)
+        else:
+            st.error('В каждой команде должно быть выбрано 5 героев')
 
 
