@@ -58,18 +58,7 @@ with st.container():
     is_rad_win = make_predict.make_predict(rad_pick, dire_pick, rad_team, dire_team)
     winner = [f'Победит команда {dire_team}', f'Победит команда {rad_team}'][is_rad_win]
 
-    col1, col2, col3 = st.columns(3)
-    with col2:
-        if(st.button(">> Сделать предсказание <<")):
-            with col1:
-                st.write(' ')
-                st.write(' ')
-                st.info(f'Radiant team: {rad_team}')
-                st.info('Pick: ' + ', '.join(rad_pick))
-            with col3:
-                st.write(' ')
-                st.write(' ')
-                st.info(f'Dire team: {dire_team}')
-                st.info('Pick: ' + ', '.join(dire_pick))
+    if(st.button("Сделать предсказание")):
+        st.success(winner)
 
-            st.success(winner)
+
