@@ -4,18 +4,18 @@ import joblib
 from catboost import CatBoostClassifier
 from numpy import nan
 
-teams_scaller = joblib.load("teams_scaller.save")
+teams_scaller = joblib.load(r"C:\Users\Admin\PycharmProjects\clone\data\teams_scaller.save")
 
 from_file = CatBoostClassifier()
-clf = from_file.load_model("MAIN_CAT_CLF", format='cbm')
+clf = from_file.load_model(r"C:\Users\Admin\PycharmProjects\clone\data\MAIN_CAT_CLF", format='cbm')
 
-with open("heroes_dict.txt", 'r') as file:
+with open(r"C:\Users\Admin\PycharmProjects\clone\data\heroes_dict.txt", 'r') as file:
     heroes_dict = eval(file.read())
 
-with open("teams_dict.txt", 'r', encoding='utf-8') as file:
+with open(r"C:\Users\Admin\PycharmProjects\clone\data\teams_dict.txt", 'r', encoding='utf-8') as file:
      teams_dict = eval(file.read())
 
-with open("teamid_stats.txt", 'r', encoding='utf-8') as file:
+with open(r"C:\Users\Admin\PycharmProjects\clone\data\teamid_stats.txt", 'r', encoding='utf-8') as file:
     teamid_stats = eval(file.read())
 
 
@@ -38,6 +38,4 @@ def make_predict(rad_pick, dire_pick, rad_team, dire_team, patch=50):
      predict = clf.predict(new_match)[0]
 
      return predict
-     #print(rad_team, rad_pick, sep='\n', end='\n\n')
-     #print(dire_team, dire_pick, sep='\n', end='\n\n')
-     #print([f'Победа {dire_team}', f'Победа {rad_team}'][predict])
+
