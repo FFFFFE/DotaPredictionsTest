@@ -8,7 +8,7 @@ from numpy import nan
 teams_scaller = joblib.load(os.path.abspath("data/teams_scaller.save"))
 
 from_file = CatBoostClassifier()
-clf = from_file.load_model(os.path.abspath("data/MAIN_CAT_CLF"), format='cbm')
+clf = from_file.load_model(os.path.abspath("data/domi_last_patch"), format='cbm')
 
 with open(os.path.abspath("data/heroes_dict.txt"), 'r') as file:
     heroes_dict = eval(file.read())
