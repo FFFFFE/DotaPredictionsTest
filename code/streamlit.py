@@ -60,6 +60,7 @@ with st.container():
         winner = ''
         if len(rad_pick) == len(dire_pick) == 5:
             is_rad_win, probability = make_predict.make_predict(rad_pick, dire_pick, rad_team, dire_team)
+            probability = round(probability[::-1][is_rad_win], 2)
             winner = [f'Победит команда {dire_team} ({probability})',
                       f'Победит команда {rad_team} ({probability})'][is_rad_win]
             st.success(winner)
