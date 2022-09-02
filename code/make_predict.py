@@ -37,7 +37,7 @@ def make_predict(rad_pick, dire_pick, rad_team, dire_team, patch=50):
 
      # 1 - radiant_win, 0 - dire_win
      predict = clf.predict(new_match)[0]
-     probability = 1 - clf.predict(new_match, prediction_type='Probability')[predict]
+     probability = 1 - clf.predict(new_match, prediction_type='Probability')[0][predict]
 
      return predict, probability
 
