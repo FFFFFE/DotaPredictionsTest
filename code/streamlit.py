@@ -59,9 +59,9 @@ with st.container():
     if(st.button("Сделать предсказание")):
         winner = ''
         if len(rad_pick) == len(dire_pick) == 5:
-            is_rad_win = make_predict.make_predict(rad_pick, dire_pick, rad_team, dire_team)
-            winner = [f'Победит команда {dire_team}', f'Победит команда {rad_team}'][is_rad_win]
-
+            is_rad_win, probability = make_predict.make_predict(rad_pick, dire_pick, rad_team, dire_team)
+            winner = [f'Победит команда {dire_team} ({probability})',
+                      f'Победит команда {rad_team} ({probability})'][is_rad_win]
             st.success(winner)
         else:
             st.error('В каждой команде должно быть выбрано 5 героев')
