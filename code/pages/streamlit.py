@@ -5,7 +5,6 @@ import make_predict
 import os
 from numpy import nan
 
-#streamlit run streamlit.py
 
 def load_lottieurl(url):
     r = requests.get(url)
@@ -32,6 +31,7 @@ teams_list.remove('OG')
 tundra_list.remove('Tundra Esports')
 teams_list = ['OG'] + teams_list
 tundra_list = ['Tundra Esports'] + tundra_list
+
 
 
 with st.container():
