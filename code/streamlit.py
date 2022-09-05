@@ -5,6 +5,10 @@ import os
 from numpy import nan
 import make_predict
 
+app = MultiPage()
+app.st = st
+
+app.add_app("Hello World", Page_2)
 
 def load_lottieurl(url):
     r = requests.get(url)
