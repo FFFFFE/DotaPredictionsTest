@@ -1,4 +1,4 @@
-import code.pages.streamlit as st
+import code.st as st
 
 
 st.wirte('Приветик :)')
