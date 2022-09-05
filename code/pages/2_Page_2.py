@@ -1,4 +1,4 @@
-#from code import streamlit as st
+import pages.streamlit as st
 
 
 st.wirte('Приветик :)')
