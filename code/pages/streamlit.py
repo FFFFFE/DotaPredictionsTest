@@ -1,9 +1,13 @@
 import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
-import make_predict
 import os
+import importlib.util
 from numpy import nan
+
+spec=importlib.util.spec_from_file_location("make_predict","code/make_predict.py")
+make_predict = importlib.util.module_from_spec(spec)
+#import make_predict
 
 
 def load_lottieurl(url):
