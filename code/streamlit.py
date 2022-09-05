@@ -1,15 +1,10 @@
 import streamlit as st
 import requests
 from streamlit_lottie import st_lottie
-from streamlit_multipage import MultiPage
 import os
 from numpy import nan
 import make_predict
 
-app = MultiPage()
-app.st = st
-
-app.add_app("Hello World", Page_2)
 
 def load_lottieurl(url):
     r = requests.get(url)
