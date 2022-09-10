@@ -17,7 +17,7 @@ with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
-        rad_team = st.selectbox("Команда Radiant: ", teams_list)
+        rad_team = st.selectbox("Команда Radiant: ", teams_list[1] + teams_list[0] + teams_list[2:])
 
     with right_column:
         dire_team = st.selectbox("Команда Dire: ", teams_list)
