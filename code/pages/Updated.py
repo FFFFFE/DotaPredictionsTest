@@ -1,4 +1,5 @@
 import streamlit as st
-from streamlit_multipage import MultiPage
+
+app = st.MultiPage()
 
 st.write('Приветик :)')
