@@ -1,4 +1,6 @@
 import streamlit as st
+from numpy import nan
+import os
 
 with open(os.path.abspath("data/heroes_dict.txt"), 'r') as file:
     heroes_dict = eval(file.read())
