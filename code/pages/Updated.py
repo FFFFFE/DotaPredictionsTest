@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_multipage import MultiPage
 
 st.write('Приветик :)')
-st.write(heroes_list[0])
+st.write(state["hero"])

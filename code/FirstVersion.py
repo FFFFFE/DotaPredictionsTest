@@ -4,7 +4,7 @@ from streamlit_lottie import st_lottie
 import os
 from numpy import nan
 import make_predict
-
+from streamlit_multipage import MultiPage
 
 def load_lottieurl(url):
     r = requests.get(url)
@@ -26,6 +26,8 @@ with open(os.path.abspath("data/teamid_stats.txt"), 'r', encoding='utf-8') as fi
 heroes_list = list(heroes_dict.keys())
 teams_list = list(teams_dict.keys())
 tundra_list = teams_list.copy()
+
+MultiPage.save({"hero": 'test'})
 
 teams_list.remove('OG')
 tundra_list.remove('Tundra Esports')
