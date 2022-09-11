@@ -46,5 +46,8 @@ cool_teams_1 = [t for t in life_df['rad_team_id'].tolist() if t in teams_id_list
 cool_teams_2 = [t for t in life_df['dire_team_id'].tolist() if t in teams_id_list]
 cool_teams = set(cool_teams_1).union(set(cool_teams_2))
 
-st.dataframe(life_df[(life_df['rad_team_id'].isin(cool_teams)) &
-             (life_df['dire_team_id'].isin(cool_teams))][['match_id', 'radiant_team', 'dire_team']])
+# st.dataframe(life_df[(life_df['rad_team_id'].isin(cool_teams)) &
+#              (life_df['dire_team_id'].isin(cool_teams))][['match_id', 'radiant_team', 'dire_team']])
+
+st.dataframe(life_df[(life_df['rad_team_id'].isin(teams_id_list)) &
+             (life_df['dire_team_id'].isin(teams_id_list))][['match_id', 'radiant_team', 'dire_team']])
