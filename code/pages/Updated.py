@@ -1,5 +1,6 @@
 import streamlit as st
 from numpy import nan
+from catboost import CatBoostClassifier
 import os
 
 with open(os.path.abspath("data/teams_dict.txt"), 'r', encoding='utf-8') as file:
