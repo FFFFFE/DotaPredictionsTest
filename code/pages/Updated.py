@@ -3,9 +3,6 @@ from numpy import nan
 import os
 import make_predict_upd
 
-with open(os.path.abspath("data/heroes_dict.txt"), 'r') as file:
-    heroes_dict = eval(file.read())
-
 with open(os.path.abspath("data/teams_dict.txt"), 'r', encoding='utf-8') as file:
     teams_dict = eval(file.read())
 
