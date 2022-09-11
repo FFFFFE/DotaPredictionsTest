@@ -18,6 +18,8 @@ with open(os.path.abspath("data/teamid_stats.txt"), 'r', encoding='utf-8') as fi
 
 def make_predict_upd(rad_team, dire_team):
     rad_team_id, dire_team_id = teams_dict[rad_team], teams_dict[dire_team]
+    return rad_team_id, dire_team_id
+
     new_match = [teamid_stats[rad_team_id][2]] + [teamid_stats[dire_team_id][2]]
 
     # 1 - radiant_win, 0 - dire_win
