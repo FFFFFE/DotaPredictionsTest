@@ -40,4 +40,3 @@ def make_predict(rad_pick, dire_pick, rad_team, dire_team, patch=51):
      probability = clf.predict(new_match, prediction_type='Probability')[0]
 
      return predict, probability
-
