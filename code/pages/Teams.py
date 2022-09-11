@@ -9,7 +9,9 @@ import os
 def make_predict_upd(rad_team, dire_team):
     rad_team_id, dire_team_id = teams_dict[rad_team], teams_dict[dire_team]
 
-    new_match = [teamid_stats[rad_team_id][2]] + [teamid_stats[dire_team_id][2]]
+    teams_rating_ratio = teamid_stats[rad_team_id][0] / teamid_stats[dire_team_id][0]
+    wr_ratio = teamid_stats[rad_team_id][2] - teamid_stats[dire_team_id][2]
+    new_match = [teams_rating_ratio, wr_ratio]
 
     # 1 - radiant_win, 0 - dire_win
     predict = clf.predict(new_match)
