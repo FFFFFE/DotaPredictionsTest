@@ -50,7 +50,7 @@ filtered_df[['predict', 'probability']] = filtered_df.apply(lambda x: make_predi
                                                             , axis=1).tolist()
 # filtered_df['predict'] = filtered_df['predict'].apply(lambda x: [f'Победит {filtered_df["dire_team"]}'
 #                 , f'Победит {filtered_df["radiant_team"]}'][x])
-filtered_df['predict'] = filtered_df.apply(lambda x: [f'Победит {x["dire_team"]}', f'Победит {x["radiant_team"]}'][x['predict']])
+filtered_df['predict'] = filtered_df.apply(lambda x: [x["dire_team"], x["radiant_team"]][x['predict']])
 filtered_df['probability'] = filtered_df['probability'].apply(lambda x: round(max(x), 2))
 
 st.markdown('## Матчи, идущие в настоящий момент')
