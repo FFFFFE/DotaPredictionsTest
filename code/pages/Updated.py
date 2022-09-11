@@ -1,5 +1,5 @@
 import streamlit as st
-import sys
+from numpy import nan
 import os
 
 with open(os.path.abspath("data/teams_dict.txt"), 'r', encoding='utf-8') as file:
