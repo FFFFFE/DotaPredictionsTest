@@ -47,6 +47,7 @@ filtered_df.reset_index(drop=True, inplace=True)
 
 test = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'], x['dire_team']), axis=1)
 
+st.dataframe(test)
 
 st.markdown('## Матчи, идущие в настоящий момент')
 st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team']])
