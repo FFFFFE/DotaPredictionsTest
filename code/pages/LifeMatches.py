@@ -5,7 +5,20 @@ import requests
 import json
 import os
 
-#key = '3A65F973BAF1C8130DCD77B739C74EC9'
+
+def make_predict_upd(rad_team, dire_team):
+    rad_team_id, dire_team_id = teams_dict[rad_team], teams_dict[dire_team]
+
+    teams_rating_ratio = teamid_stats[rad_team_id][0] / teamid_stats[dire_team_id][0]
+    wr_ratio = teamid_stats[rad_team_id][2] - teamid_stats[dire_team_id][2]
+    new_match = [teams_rating_ratio, wr_ratio]
+
+    # 1 - radiant_win, 0 - dire_win
+    predict = clf.predict(new_match)
+    probability = clf.predict(new_match, prediction_type='Probability')
+    return predict, probability
+
+
 steam_key = st.secrets['steam_key']
 
 with open(os.path.abspath("data/teams_dict.txt"), 'r', encoding='utf-8') as file:
@@ -25,5 +38,8 @@ life_df.dropna(inplace=True)
 
 life_df[['radiant_team.team_id', 'dire_team.team_id']] = life_df[['radiant_team.team_id', 'dire_team.team_id']].astype('int64')
 
-cool_teams = [t for t in life_df['dire_team.team_id'].tolist() if t in teams_id_list]
+cool_teams_1 = [t for t in life_df['dire_team.team_id'].tolist() if t in teams_id_list]
+cool_teams_2 = [t for t in life_df['dire_team.team_id'].tolist() if t in teams_id_list]
+cool_teams = set(cool_teams_1).union(set(cool_teams_2))
+
 st.dataframe(life_df[life_df['dire_team.team_id'].isin(cool_teams)][['match_id', 'radiant_team.team_name', 'dire_team.team_name']])
