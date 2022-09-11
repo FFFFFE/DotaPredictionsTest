@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+from numpy import nan
 import requests
 import json
 import os
