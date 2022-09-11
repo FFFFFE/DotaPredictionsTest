@@ -1,7 +1,6 @@
 import streamlit as st
-from numpy import nan
 import os
-import make_predict_upd
+from code import make_predict_upd
 
 with open(os.path.abspath("data/teams_dict.txt"), 'r', encoding='utf-8') as file:
     teams_dict = eval(file.read())
@@ -21,7 +20,7 @@ with st.container():
         dire_team = st.selectbox("Команда Dire: ", teams_list)
 
     if (st.button("Сделать предсказание")):
-        st.write(str(make_predict_upd.make_predict_upd(rad_team, dire_team)))
+        st.write(make_predict_upd.make_predict_upd(rad_team, dire_team))
 
         # is_rad_win, probability = make_predict_upd.make_predict_upd(rad_team, dire_team)
         # probability = round(max(probability) * 100)
