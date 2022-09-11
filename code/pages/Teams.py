@@ -42,7 +42,7 @@ with st.container():
     left_column, right_column = st.columns(2)
     with left_column:
         st.write('##')
-        st.markdown("## Предсказание матчей Dota 2")
+        st.markdown("## 🎮 Предсказание матчей Dota 2")
         st.write("Выберите команды, чтобы получить прогноз")
     with right_column:
         st_lottie(lottie_coding, height=250, key="coding")
