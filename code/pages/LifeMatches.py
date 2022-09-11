@@ -5,8 +5,8 @@ import requests
 import json
 import os
 
-key = '3A65F973BAF1C8130DCD77B739C74EC9'
-st.write("тест:", st.secrets["some_key"])
+#key = '3A65F973BAF1C8130DCD77B739C74EC9'
+steam_key = st.secrets['steam_key']
 
 with open(os.path.abspath("data/teams_dict.txt"), 'r', encoding='utf-8') as file:
     teams_dict = eval(file.read())
@@ -16,7 +16,7 @@ with open(os.path.abspath("data/teamid_stats.txt"), 'r', encoding='utf-8') as fi
 
 teams_id_list = list(teamid_stats.keys())
 
-r_steam = requests.get(f'https://api.steampowered.com/IDOTA2Match_570/GetLiveLeagueGames/v1/?key={key}')
+r_steam = requests.get(f'https://api.steampowered.com/IDOTA2Match_570/GetLiveLeagueGames/v1/?key={steam_key}')
 live_games = json.loads(r_steam.text)
 
 life_df = pd.json_normalize(live_games['result']['games'])
