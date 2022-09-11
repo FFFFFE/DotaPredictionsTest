@@ -6,6 +6,7 @@ import json
 import os
 
 key = '3A65F973BAF1C8130DCD77B739C74EC9'
+st.write("тест:", st.secrets["some_key"])
 
 with open(os.path.abspath("data/teams_dict.txt"), 'r', encoding='utf-8') as file:
     teams_dict = eval(file.read())
