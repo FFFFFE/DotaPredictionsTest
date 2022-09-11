@@ -5,6 +5,7 @@ from streamlit_lottie import st_lottie
 import requests
 import os
 
+
 def make_predict_upd(rad_team, dire_team):
     rad_team_id, dire_team_id = teams_dict[rad_team], teams_dict[dire_team]
 
@@ -14,6 +15,8 @@ def make_predict_upd(rad_team, dire_team):
     predict = clf.predict(new_match)
     probability = clf.predict(new_match, prediction_type='Probability')
     return predict, probability
+
+
 def load_lottieurl(url):
     r = requests.get(url)
     if r.status_code != 200:
@@ -44,7 +47,7 @@ with st.container():
         st_lottie(lottie_coding, height=250, key="coding")
 
 with st.container():
-    st.write("---")
+    # st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
         rad_team = st.selectbox("Команда Radiant: ", teams_list[0:2:-1] + teams_list[2:])
@@ -56,5 +59,5 @@ with st.container():
         is_rad_win, probability = make_predict_upd(rad_team, dire_team)
         probability = round(max(probability) * 100)
         winner = [f'Победит команда {dire_team} ({probability}%)',
-                       f'Победит команда {rad_team} ({probability}%)'][is_rad_win]
+                  f'Победит команда {rad_team} ({probability}%)'][is_rad_win]
         st.success(winner)
