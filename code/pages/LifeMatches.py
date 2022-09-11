@@ -50,4 +50,5 @@ filtered_df[['predict', 'probability']] = test
 
 
 st.markdown('## Матчи, идущие в настоящий момент')
+st.write('Пока не доделал')
 st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'predict', 'probability']])
