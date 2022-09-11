@@ -19,7 +19,7 @@ def make_predict_upd(rad_team, dire_team):
 
     # 1 - radiant_win, 0 - dire_win
     predict = clf.predict(new_match)
-    probability = clf.predict(new_match, prediction_type='Probability')[0]
+    probability = clf.predict(new_match, prediction_type='Probability')
     return predict, probability
 
 
