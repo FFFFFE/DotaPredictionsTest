@@ -39,4 +39,4 @@ with st.container():
         probability = round(max(probability) * 100)
         winner = [f'Победит команда {dire_team} ({probability}%)',
                        f'Победит команда {rad_team} ({probability}%)'][is_rad_win]
-         st.success(winner)
+        st.success(winner)
