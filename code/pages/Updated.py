@@ -35,10 +35,8 @@ with st.container():
         dire_team = st.selectbox("Команда Dire: ", teams_list)
 
     if (st.button("Сделать предсказание")):
-        st.write(str(make_predict_upd(rad_team, dire_team)))
-
-        # is_rad_win, probability = make_predict_upd.make_predict_upd(rad_team, dire_team)
-        # probability = round(max(probability) * 100)
-        # winner = [f'Победит команда {dire_team} ({probability}%)',
-        #               f'Победит команда {rad_team} ({probability}%)'][is_rad_win]
-        # st.success(winner)
+        is_rad_win, probability = make_predict_upd(rad_team, dire_team)
+        probability = round(max(probability) * 100)
+        winner = [f'Победит команда {dire_team} ({probability}%)',
+                       f'Победит команда {rad_team} ({probability}%)'][is_rad_win]
+         st.success(winner)
