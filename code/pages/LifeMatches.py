@@ -24,3 +24,7 @@ life_df = life_df[['match_id', 'radiant_team.team_name', 'radiant_team.team_id',
                     , 'dire_team.team_name']]
 
 st.dataframe(life_df)
+
+cool_teams = [t for t in life_df['dire_team.team_id'].tolist() if t in teams_list]
+
+st.dataframe(life_df[life_df['dire_team.team_id'].isin(cool_teams)])
