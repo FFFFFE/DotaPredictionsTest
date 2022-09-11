@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 from numpy import nan
+from catboost import CatBoostClassifier
 import requests
 import json
 import os
@@ -18,6 +19,8 @@ def make_predict_upd(rad_team, dire_team):
     probability = clf.predict(new_match, prediction_type='Probability')
     return predict, probability
 
+from_file = CatBoostClassifier()
+clf = from_file.load_model(os.path.abspath("data/model_eval.cbm"))
 
 steam_key = st.secrets['steam_key']
 
@@ -41,6 +44,8 @@ life_df[['rad_team_id', 'dire_team_id']] = life_df[['rad_team_id', 'dire_team_id
 
 filtered_df = life_df[(life_df['rad_team_id'].isin(teams_id_list)) & (life_df['dire_team_id'].isin(teams_id_list))]
 filtered_df.reset_index(drop=True, inplace=True)
+
+filtered_df[['predict', 'probability']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'], x['dire_team']), axis=1)
 
 
 st.markdown('## Матчи, идущие в настоящий момент')
