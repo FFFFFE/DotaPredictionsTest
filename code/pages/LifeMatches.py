@@ -22,6 +22,7 @@ life_df = pd.json_normalize(live_games['result']['games'])
 
 life_df = life_df[['match_id', 'radiant_team.team_name', 'radiant_team.team_id', 'dire_team.team_id'
                     , 'dire_team.team_name']]
+life_df = life_df[['radiant_team.team_id', 'dire_team.team_id']].apply(int)
 
 st.dataframe(life_df)
 
