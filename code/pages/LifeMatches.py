@@ -41,4 +41,7 @@ life_df[['rad_team_id', 'dire_team_id']] = life_df[['rad_team_id', 'dire_team_id
 
 filtered_df = life_df[(life_df['rad_team_id'].isin(teams_id_list)) & (life_df['dire_team_id'].isin(teams_id_list))]
 filtered_df.reset_index(drop=True, inplace=True)
+
+
+st.markdown('## Матчи, идущие в настоящий момент')
 st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team']])
