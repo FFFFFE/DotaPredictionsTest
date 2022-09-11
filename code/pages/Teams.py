@@ -2,6 +2,7 @@ import streamlit as st
 from numpy import nan
 from catboost import CatBoostClassifier
 from streamlit_lottie import st_lottie
+import requests
 import os
 
 def make_predict_upd(rad_team, dire_team):
