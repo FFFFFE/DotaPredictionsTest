@@ -20,12 +20,12 @@ with open(os.path.abspath("data/teamid_stats.txt"), 'r', encoding='utf-8') as fi
     teamid_stats = eval(file.read())
 
 
-def make_predict(rad_pick, dire_pick, rad_team, dire_team, patch=50):
+def make_predict(rad_pick, dire_pick, rad_team, dire_team, patch=51):
      picks_lst = [heroes_dict[i] for i in rad_pick] + [heroes_dict[i] for i in dire_pick]
 
      rad_team_id, dire_team_id = teams_dict[rad_team], teams_dict[dire_team]
 
-     team_stats = teams_scaller.transform([list(teamid_stats[rad_team_id] + teamid_stats[dire_team_id])])[0]
+     team_stats = teams_scaller.transform([list(teamid_stats[rad_team_id][:2] + teamid_stats[dire_team_id][:2])])[0]
 
      cols = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'rad_team_id', 'dire_team_id', 'rad_rating',
              'rad_matches_cnt',	'dire_rating',	'dire_matches_cnt',	'patch']
