@@ -13,7 +13,7 @@ with open(os.path.abspath("data/teams_dict.txt"), 'r', encoding='utf-8') as file
 with open(os.path.abspath("data/teamid_stats.txt"), 'r', encoding='utf-8') as file:
     teamid_stats = eval(file.read())
 
-teams_list = list(teams_dict.keys())
+teams_id_list = list(teamid_stats.keys())
 
 r_steam = requests.get(f'https://api.steampowered.com/IDOTA2Match_570/GetLiveLeagueGames/v1/?key={key}')
 live_games = json.loads(r_steam.text)
@@ -26,7 +26,7 @@ life_df[['radiant_team.team_id', 'dire_team.team_id']] = life_df[['radiant_team.
 
 st.dataframe(life_df[['match_id', 'radiant_team.team_name', 'dire_team.team_name']])
 
-cool_teams = [t for t in life_df['dire_team.team_id'].tolist() if t in teams_list]
+cool_teams = [t for t in life_df['dire_team.team_id'].tolist() if t in teams_id_list]
 
 st.write(str(teams_list[:10]))
 st.dataframe(life_df[life_df['dire_team.team_id'].isin(cool_teams)])
