@@ -16,16 +16,6 @@ with open(os.path.abspath("data/teamid_stats.txt"), 'r', encoding='utf-8') as fi
     teamid_stats = eval(file.read())
 
 
-def make_predict(rad_team, dire_team):
-     team_stats = teams_scaller.transform([list(teamid_stats[rad_team_id] + teamid_stats[dire_team_id])])[0]
-     new_match = pd.DataFrame(list(team_stats))
-
-     # 1 - radiant_win, 0 - dire_win
-     predict = clf.predict(new_match)
-     probability = clf.predict(new_match, prediction_type='Probability')[0]
-
-     return predict, probability
-
 def make_predict_upd(rad_team, dire_team):
      rad_team_id, dire_team_id = teams_dict[rad_team], teams_dict[dire_team]
      new_match = [teamid_stats[rad_team_id][2]] + [teamid_stats[dire_team_id][2]]
