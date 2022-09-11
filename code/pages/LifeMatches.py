@@ -37,9 +37,8 @@ life_df = life_df[['match_id', 'radiant_team.team_name', 'radiant_team.team_id',
 life_df = life_df.rename(columns={'radiant_team.team_name': 'radiant_team', 'dire_team.team_name': 'dire_team',
                         'radiant_team.team_id': 'rad_team_id', 'dire_team.team_id': 'dire_team_id'})
 life_df.dropna(inplace=True)
-
 life_df[['rad_team_id', 'dire_team_id']] = life_df[['rad_team_id', 'dire_team_id']].astype('int64')
-life_df.reset_index(drop=True, inplace=True)
 
 filtered_df = life_df[(life_df['rad_team_id'].isin(teams_id_list)) & (life_df['dire_team_id'].isin(teams_id_list))]
+filtered_df.reset_index(drop=True, inplace=True)
 st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team']])
