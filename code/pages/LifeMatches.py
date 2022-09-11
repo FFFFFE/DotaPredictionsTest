@@ -48,9 +48,10 @@ filtered_df.reset_index(drop=True, inplace=True)
 
 filtered_df[['predict', 'probability']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'], x['dire_team'])
                                                             , axis=1).tolist()
-filtered_df['predict'] = filtered_df['predict'].apply(lambda x: [f'Победит {filtered_df["dire_team"]}'
-                , f'Победит {filtered_df["radiant_team"]}'][x])
-filtered_df['probability'] = filtered_df['probability'].apply(lambda x: round(max(map(float, x))))
+# filtered_df['predict'] = filtered_df['predict'].apply(lambda x: [f'Победит {filtered_df["dire_team"]}'
+#                 , f'Победит {filtered_df["radiant_team"]}'][x])
+filtered_df['predict'] = filtered_df.apply(lambda x: [f'Победит {x["dire_team"]}', f'Победит {x["radiant_team"]}'][x['predict']])
+filtered_df['probability'] = filtered_df['probability'].apply(lambda x: round(max(x), 2))
 
 st.markdown('## Матчи, идущие в настоящий момент')
 st.write('Пока не доделал')
