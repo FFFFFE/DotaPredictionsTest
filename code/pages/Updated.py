@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-from code import make_predict_upd
+import make_predict_upd
 
 with open(os.path.abspath("data/teams_dict.txt"), 'r', encoding='utf-8') as file:
     teams_dict = eval(file.read())
