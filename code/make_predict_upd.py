@@ -6,7 +6,7 @@ import os
 from numpy import nan
 
 from_file = CatBoostClassifier()
-clf = from_file.load_model(os.path.abspath("data/model_eval"), format='cbm')
+clf = from_file.load_model(os.path.abspath("data/model_eval.cbm"))
 
 
 with open(os.path.abspath("data/teams_dict.txt"), 'r', encoding='utf-8') as file:
