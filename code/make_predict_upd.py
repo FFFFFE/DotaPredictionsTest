@@ -21,7 +21,7 @@ def make_predict(rad_team, dire_team):
      new_match = pd.DataFrame(list(team_stats))
 
      # 1 - radiant_win, 0 - dire_win
-     predict = clf.predict(new_match)[0]
+     predict = clf.predict(new_match)
      probability = clf.predict(new_match, prediction_type='Probability')[0]
 
      return predict, probability
