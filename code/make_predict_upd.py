@@ -5,10 +5,8 @@ from catboost import CatBoostClassifier
 import os
 from numpy import nan
 
-teams_scaller = joblib.load(os.path.abspath("data/teams_scaller.save"))
-
 from_file = CatBoostClassifier()
-clf = from_file.load_model(os.path.abspath("data/domi_last_patch"), format='cbm')
+clf = from_file.load_model(os.path.abspath("data/model_eval"), format='cbm')
 
 
 with open(os.path.abspath("data/teams_dict.txt"), 'r', encoding='utf-8') as file:
@@ -28,3 +26,12 @@ def make_predict(rad_team, dire_team):
 
      return predict, probability
 
+def make_predict_upd(rad_team, dire_team):
+     rad_team_id, dire_team_id = teams_dict[rad_team], teams_dict[dire_team]
+     new_match = [teamid_stats[rad_team_id][2]] + [teamid_stats[dire_team_id][2]]
+
+     # 1 - radiant_win, 0 - dire_win
+     predict = clf.predict(new_match)[0]
+     probability = clf.predict(new_match, prediction_type='Probability')[0]
+
+     return predict, probability
