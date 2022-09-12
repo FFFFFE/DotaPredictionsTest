@@ -53,7 +53,7 @@ else:
 
         filtered_df = life_df[(life_df['rad_team_id'].isin(teams_id_list)) & (life_df['dire_team_id'].isin(teams_id_list))]
         filtered_df.reset_index(drop=True, inplace=True)
-        st.write(len(life_df))
+        st.write(len(filtered_df))
 
         filtered_df[['winner_side', 'probability']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'],
                                                                                                   x['dire_team']), axis=1).tolist()
