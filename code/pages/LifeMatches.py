@@ -58,7 +58,7 @@ filtered_df['probability'] = filtered_df['probability'].apply(lambda x: round(ma
 # filtered_df['test_column'] = filtered_df.apply(lambda x: find_winner(x['radiant_team'], x['dire_team'],
 #                                                                           x['winner_predict']), axis=1).tolist()
 
-filtered_df['test_column'] = filtered_df.apply(lambda x: (x['radiant_team'] + x['dire_team']), axis=1).tolist()
+filtered_df['test_column'] = filtered_df.apply(lambda x: ([x['radiant_team'], x['dire_team']][0]), axis=1).tolist()
 
 st.markdown('## Матчи, идущие в настоящий момент')
 st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability', 'test_column']])
