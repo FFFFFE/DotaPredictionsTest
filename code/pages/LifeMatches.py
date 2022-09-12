@@ -56,7 +56,7 @@ def find_winner(rad_team, dire_team, winner_predict):
     return rad_team if winner_predict == 'radiant_team' else dire_team
 
 
-filtered_df['test_column'] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'], x['dire_team'],
+filtered_df['test_column'] = filtered_df.apply(lambda x: find_winner(x['radiant_team'], x['dire_team'],
                                                                           x['winner_predict']), axis=1).tolist()
 
 st.markdown('## Матчи, идущие в настоящий момент')
