@@ -52,7 +52,7 @@ else:
         live_df.dropna(inplace=True)
         live_df[['rad_team_id', 'dire_team_id']] = live_df[['rad_team_id', 'dire_team_id']].astype('int64')
 
-        filtered_df = life_df[(live_df['rad_team_id'].isin(teams_id_list)) & (live_df['dire_team_id'].isin(teams_id_list))]
+        filtered_df = live_df[(live_df['rad_team_id'].isin(teams_id_list)) & (live_df['dire_team_id'].isin(teams_id_list))]
         filtered_df.reset_index(drop=True, inplace=True)
         if len(filtered_df) == 0:
             st.info('Нет онлайн матчей')
