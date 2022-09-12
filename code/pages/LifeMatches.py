@@ -37,22 +37,22 @@ if r_steam.status_code != 200:
     st.error(f'Ошибка {r_steam.status_code}. Попробуйте перезагрузить страницу')
 else:
     live_games = json.loads(r_steam.text)
-    life_df = pd.json_normalize(live_games['result']['games'])
+    live_df = pd.json_normalize(live_games['result']['games'])
     important_cols = ['match_id', 'radiant_team.team_name', 'radiant_team.team_id', 'dire_team.team_name',
                       'dire_team.team_id']
 
-    if len(set(important_cols) - set(life_df.columns)) != 0:
+    if len(set(important_cols) - set(live_df.columns)) != 0:
         st.error('Перезагрузите страницу')
     else:
         st.markdown('## Матчи, идущие в настоящий момент')
 
-        life_df = life_df[important_cols]
-        life_df = life_df.rename(columns={'radiant_team.team_name': 'radiant_team', 'dire_team.team_name': 'dire_team',
+        live_df = live_df[important_cols]
+        live_df = live_df.rename(columns={'radiant_team.team_name': 'radiant_team', 'dire_team.team_name': 'dire_team',
                                     'radiant_team.team_id': 'rad_team_id', 'dire_team.team_id': 'dire_team_id'})
-        life_df.dropna(inplace=True)
-        life_df[['rad_team_id', 'dire_team_id']] = life_df[['rad_team_id', 'dire_team_id']].astype('int64')
+        live_df.dropna(inplace=True)
+        live_df[['rad_team_id', 'dire_team_id']] = live_df[['rad_team_id', 'dire_team_id']].astype('int64')
 
-        filtered_df = life_df[(life_df['rad_team_id'].isin(teams_id_list)) & (life_df['dire_team_id'].isin(teams_id_list))]
+        filtered_df = life_df[(live_df['rad_team_id'].isin(teams_id_list)) & (live_df['dire_team_id'].isin(teams_id_list))]
         filtered_df.reset_index(drop=True, inplace=True)
         if len(filtered_df) == 0:
             st.info('Нет онлайн матчей')
@@ -68,29 +68,28 @@ else:
 
 def test():
     if r_steam.status_code != 200:
-        st.error(f'Ошибка {r_steam.status_code}. Попробуйте перезагрузить страницу')
-        return
+        return st.error(f'Ошибка {r_steam.status_code}. Попробуйте перезагрузить страницу')
+
     live_games = json.loads(r_steam.text)
-    life_df = pd.json_normalize(live_games['result']['games'])
+    live_df = pd.json_normalize(live_games['result']['games'])
     important_cols = ['match_id', 'radiant_team.team_name', 'radiant_team.team_id', 'dire_team.team_name',
                       'dire_team.team_id']
-    if len(set(important_cols) - set(life_df.columns)) != 0:
-        st.error('Перезагрузите страницу')
-        return
+    if len(set(important_cols) - set(live_df.columns)) != 0:
+        return st.error('Перезагрузите страницу')
+
     st.markdown('## Матчи, идущие в настоящий момент')
 
-    life_df = life_df[important_cols]
-    life_df = life_df.rename(columns={'radiant_team.team_name': 'radiant_team', 'dire_team.team_name': 'dire_team',
+    live_df = live_df[important_cols]
+    live_df = live_df.rename(columns={'radiant_team.team_name': 'radiant_team', 'dire_team.team_name': 'dire_team',
                                       'radiant_team.team_id': 'rad_team_id', 'dire_team.team_id': 'dire_team_id'})
-    life_df.dropna(inplace=True)
-    life_df[['rad_team_id', 'dire_team_id']] = life_df[['rad_team_id', 'dire_team_id']].astype('int64')
+    live_df.dropna(inplace=True)
+    live_df[['rad_team_id', 'dire_team_id']] = live_df[['rad_team_id', 'dire_team_id']].astype('int64')
 
-    filtered_df = life_df[(life_df['rad_team_id'].isin(teams_id_list)) & (life_df['dire_team_id'].isin(teams_id_list))]
+    filtered_df = live_df[(live_df['rad_team_id'].isin(teams_id_list)) & (live_df['dire_team_id'].isin(teams_id_list))]
     filtered_df.reset_index(drop=True, inplace=True)
 
     if len(filtered_df) == 0:
         return st.info('Нет онлайн матчей')
-
 
     filtered_df[['winner_side', 'probability']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'],
                                                                        x['dire_team']), axis=1).tolist()
@@ -98,5 +97,3 @@ def test():
     filtered_df['winner_predict'] = filtered_df.apply(lambda x: ([x['radiant_team'], x['dire_team']]
                                                                     [x['winner_side'] == 'dire_team']), axis=1).tolist()
     st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability']])
-
-test()
