@@ -46,11 +46,12 @@ life_df[['rad_team_id', 'dire_team_id']] = life_df[['rad_team_id', 'dire_team_id
 filtered_df = life_df[(life_df['rad_team_id'].isin(teams_id_list)) & (life_df['dire_team_id'].isin(teams_id_list))]
 filtered_df.reset_index(drop=True, inplace=True)
 
-filtered_df[['predict', 'probability']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'], x['dire_team'])
-                                                            , axis=1).tolist()
-filtered_df['predict'] = filtered_df['predict'].apply(lambda x: ["dire_team", "radiant_team"][x])
+filtered_df[['winner_predict', 'probability']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'],
+                                                                                      x['dire_team']), axis=1).tolist()
+filtered_df['winner_predict'] = filtered_df['winner_predict'].apply(lambda x: ["dire_team", "radiant_team"][x])
 filtered_df['probability'] = filtered_df['probability'].apply(lambda x: round(max(x), 4))
 
+filtered_df['test_column'] = filtered_df.apply(lambda x: x["dire_team")
 
 st.markdown('## Матчи, идущие в настоящий момент')
-st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'predict', 'probability']])
+st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability']])
