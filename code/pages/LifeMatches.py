@@ -34,7 +34,16 @@ with open(os.path.abspath("data/teamid_stats.txt"), 'r', encoding='utf-8') as fi
 teams_id_list = list(teamid_stats.keys())
 
 r_steam = requests.get(f'https://api.steampowered.com/IDOTA2Match_570/GetLiveLeagueGames/v1/?key={steam_key}')
+st.write(r_steam.status_code)
 live_games = json.loads(r_steam.text)
+
+
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
 
 life_df = pd.json_normalize(live_games['result']['games'])
 life_df = life_df[['match_id', 'radiant_team.team_name', 'radiant_team.team_id', 'dire_team.team_name', 'dire_team.team_id']]
