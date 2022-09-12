@@ -54,4 +54,4 @@ filtered_df['probability'] = filtered_df['probability'].apply(lambda x: round(ma
 filtered_df['test_column'] = filtered_df.apply(lambda x: x["dire_team")
 
 st.markdown('## Матчи, идущие в настоящий момент')
-st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability']])
+st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability', 'test_column']])
