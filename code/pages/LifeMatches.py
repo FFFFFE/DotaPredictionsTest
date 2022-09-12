@@ -51,7 +51,7 @@ filtered_df[['winner_predict', 'probability']] = filtered_df.apply(lambda x: mak
 filtered_df['winner_predict'] = filtered_df['winner_predict'].apply(lambda x: ["dire_team", "radiant_team"][x])
 filtered_df['probability'] = filtered_df['probability'].apply(lambda x: round(max(x), 4))
 
-filtered_df['test_column'] = filtered_df.apply(lambda x: x["dire_team"])
+filtered_df['test_column'] = True if 3 > 2 else False
 
 st.markdown('## Матчи, идущие в настоящий момент')
 st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability', 'test_column']])
