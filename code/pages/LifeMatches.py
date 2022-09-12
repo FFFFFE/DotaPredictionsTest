@@ -45,6 +45,8 @@ else:
     if len(set(important_cols) - set(life_df.columns)) != 0:
         st.error('Перезагрузите страницу')
     else:
+        st.markdown('## Матчи, идущие в настоящий момент')
+
         life_df = life_df[important_cols]
         life_df = life_df.rename(columns={'radiant_team.team_name': 'radiant_team', 'dire_team.team_name': 'dire_team',
                                     'radiant_team.team_id': 'rad_team_id', 'dire_team.team_id': 'dire_team_id'})
@@ -61,9 +63,7 @@ else:
             filtered_df['winner_side'] = filtered_df['winner_side'].apply(lambda x: ["dire_team", "radiant_team"][x])
             filtered_df['probability'] = filtered_df['probability'].apply(lambda x: round(max(x), 4))
 
-
             filtered_df['winner_predict'] = filtered_df.apply(lambda x: ([x['radiant_team'], x['dire_team']]
                                                                     [x['winner_side'] == 'dire_team']), axis=1).tolist()
 
-            st.markdown('## Матчи, идущие в настоящий момент')
             st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability']])
