@@ -14,9 +14,8 @@ def make_predict_upd(rad_team, dire_team):
     wr_ratio = teamid_stats[rad_team_id][2] - teamid_stats[dire_team_id][2]
     new_match = [teams_rating_ratio, wr_ratio]
     # 1 - radiant_win, 0 - dire_win
-    prediction = clf.predict(new_match)
     probability = round(max(clf.predict(new_match, prediction_type='Probability')), 4)
-    return prediction, probability
+    return clf.predict(new_match), probability
 
 
 from_file = CatBoostClassifier()
@@ -33,6 +32,7 @@ with open(os.path.abspath("data/teamid_stats.txt"), 'r', encoding='utf-8') as fi
 teams_id_list = list(teamid_stats.keys())
 
 r_steam = requests.get(f'https://api.steampowered.com/IDOTA2Match_570/GetLiveLeagueGames/v1/?key={steam_key}')
+
 if r_steam.status_code != 200:
     st.error(f'Ошибка {r_steam.status_code}. Попробуйте перезагрузить страницу')
 else:
@@ -60,9 +60,13 @@ else:
             filtered_df[['winner_side', 'probability']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'],
                                                                                         x['dire_team']), axis=1).tolist()
             filtered_df['winner_side'] = filtered_df['winner_side'].apply(lambda x: ["dire_team", "radiant_team"][x])
-            #filtered_df['probability'] = filtered_df['probability'].apply(lambda x: round(x, 4))
 
             filtered_df['winner_predict'] = filtered_df.apply(lambda x: ([x['radiant_team'], x['dire_team']]
                                                                     [x['winner_side'] == 'dire_team']), axis=1).tolist()
 
             st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability']])
+
+def test():
+    st.write('test')
+
+test()
