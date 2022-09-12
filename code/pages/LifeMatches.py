@@ -67,6 +67,36 @@ else:
             st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability']])
 
 def test():
-    st.write('test')
+    if r_steam.status_code != 200:
+        st.error(f'Ошибка {r_steam.status_code}. Попробуйте перезагрузить страницу')
+        return
+    live_games = json.loads(r_steam.text)
+    life_df = pd.json_normalize(live_games['result']['games'])
+    important_cols = ['match_id', 'radiant_team.team_name', 'radiant_team.team_id', 'dire_team.team_name',
+                      'dire_team.team_id']
+    if len(set(important_cols) - set(life_df.columns)) != 0:
+        st.error('Перезагрузите страницу')
+        return
+    st.markdown('## Матчи, идущие в настоящий момент')
+
+    life_df = life_df[important_cols]
+    life_df = life_df.rename(columns={'radiant_team.team_name': 'radiant_team', 'dire_team.team_name': 'dire_team',
+                                      'radiant_team.team_id': 'rad_team_id', 'dire_team.team_id': 'dire_team_id'})
+    life_df.dropna(inplace=True)
+    life_df[['rad_team_id', 'dire_team_id']] = life_df[['rad_team_id', 'dire_team_id']].astype('int64')
+
+    filtered_df = life_df[(life_df['rad_team_id'].isin(teams_id_list)) & (life_df['dire_team_id'].isin(teams_id_list))]
+    filtered_df.reset_index(drop=True, inplace=True)
+
+    if len(filtered_df) == 0:
+        st.info('Нет онлайн матчей')
+        return
+
+    filtered_df[['winner_side', 'probability']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'],
+                                                                       x['dire_team']), axis=1).tolist()
+    filtered_df['winner_side'] = filtered_df['winner_side'].apply(lambda x: ["dire_team", "radiant_team"][x])
+    filtered_df['winner_predict'] = filtered_df.apply(lambda x: ([x['radiant_team'], x['dire_team']]
+                                                                    [x['winner_side'] == 'dire_team']), axis=1).tolist()
+    st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability']])
 
 test()
