@@ -13,11 +13,10 @@ def make_predict_upd(rad_team, dire_team):
     teams_rating_ratio = teamid_stats[rad_team_id][0] / teamid_stats[dire_team_id][0]
     wr_ratio = teamid_stats[rad_team_id][2] - teamid_stats[dire_team_id][2]
     new_match = [teams_rating_ratio, wr_ratio]
-
     # 1 - radiant_win, 0 - dire_win
-    predict = clf.predict(new_match)
-    probability = clf.predict(new_match, prediction_type='Probability')
-    return predict, probability
+    prediction = clf.predict(new_match)
+    probability = max(clf.predict(new_match, prediction_type='Probability'))
+    return prediction, probability
 
 
 from_file = CatBoostClassifier()
@@ -61,7 +60,7 @@ else:
             filtered_df[['winner_side', 'probability']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'],
                                                                                         x['dire_team']), axis=1).tolist()
             filtered_df['winner_side'] = filtered_df['winner_side'].apply(lambda x: ["dire_team", "radiant_team"][x])
-            filtered_df['probability'] = filtered_df['probability'].apply(lambda x: round(max(x), 4))
+            filtered_df['probability'] = filtered_df['probability'].apply(lambda x: round(x, 4))
 
             filtered_df['winner_predict'] = filtered_df.apply(lambda x: ([x['radiant_team'], x['dire_team']]
                                                                     [x['winner_side'] == 'dire_team']), axis=1).tolist()
