@@ -1,0 +1,4 @@
+match_id,radiant_team,rad_team_id,dire_team,dire_team_id,winner_side,probability,winner_predict,fact_result
+6754052082,Royal Never Give Up,6209804,Xtreme  Gaming,8261500,radiant_team,0.5129,Royal Never Give Up,
+6754084602,Sworn Die,8629327,Mad Monkeys,8629318,radiant_team,0.5084,Sworn Die,
+6754102446,Rakuzan,8794067,DEEP RAVAGE,8469455,dire_team,0.5017,DEEP RAVAGE,
