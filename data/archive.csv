@@ -1,4 +1,35 @@
-match_id,radiant_team,rad_team_id,dire_team,dire_team_id,winner_side,probability,winner_predict,fact_result
-6754052082,Royal Never Give Up,6209804,Xtreme  Gaming,8261500,radiant_team,0.5129,Royal Never Give Up,
-6754084602,Sworn Die,8629327,Mad Monkeys,8629318,radiant_team,0.5084,Sworn Die,
-6754102446,Rakuzan,8794067,DEEP RAVAGE,8469455,dire_team,0.5017,DEEP RAVAGE,
+match_id,radiant_team,rad_team_id,dire_team,dire_team_id,map_cnt,winner_side,probability,winner_predict,fact_result
+6756064995,Team Secret,1838315,Into The Breach,8390848,1,radiant_team,0.6133,Team Secret,radiant_team
+6756075501,OTHERS ,8799593,Shinigami Gaming,8765917,1,radiant_team,0.9031,OTHERS ,dire_team
+6756206942,Into The Breach,8390848,Team Secret,1838315,2,dire_team,0.6694,Team Secret,radiant_team
+6756245620,BlackBulls,8799986,Dreamers Esports,8680612,1,radiant_team,0.6647,BlackBulls,dire_team
+6756244987,Shinigami Gaming,8765917,OTHERS ,8799593,2,dire_team,0.88,OTHERS ,dire_team
+6756321572,OTHERS ,8799593,Shinigami Gaming,8765917,3,radiant_team,0.9031,OTHERS ,radiant_team
+6756346168,Team Secret,1838315,Into The Breach,8390848,3,radiant_team,0.6133,Team Secret,radiant_team
+6756361197,Dreamers Esports,8680612,BlackBulls,8799986,1,dire_team,0.6381,BlackBulls,radiant_team
+6756469883,Alliance,111474,Entity,8605863,1,dire_team,0.6727,Entity,dire_team
+6756512834,Team Flamingos,8533458,NINFAW,8746180,1,radiant_team,0.6376,Team Flamingos,dire_team
+6756530795,OTHERS ,8799593,KIBA ARMS,8606358,2,radiant_team,0.8445,OTHERS ,radiant_team
+6757060715,Nigma Galaxy SEA,8572181,Xerxia,8736661,1,dire_team,0.7143,Xerxia,dire_team
+6757052504,Mad Monkeys,8629318,Bright Crusaders,8629317,1,dire_team,0.6287,Bright Crusaders,dire_team
+6757081063,Bright Crusaders,8629317,Mad Monkeys,8629318,2,radiant_team,0.564,Bright Crusaders,dire_team
+6757114265,Mad Monkeys,8629318,Bright Crusaders,8629317,3,dire_team,0.6287,Bright Crusaders,radiant_team
+6757120989,Nigma Galaxy SEA,8572181,Xerxia,8736661,2,dire_team,0.7143,Xerxia,radiant_team
+6757162985,Headless Horsemens,2443375,Dragon Blood,8629014,1,dire_team,0.6448,Dragon Blood,radiant_team
+6757171186,Nigma Galaxy SEA,8572181,Xerxia,8736661,3,dire_team,0.7143,Xerxia,dire_team
+6757201285,Dragon Blood,8629014,Headless Horsemens,2443375,2,radiant_team,0.5794,Dragon Blood,radiant_team
+6757189761,Celestials,8546012,Rakuzan,8794067,1,dire_team,0.7953,Rakuzan,dire_team
+6757217169,DGG Esports,8597391,IVY,8318683,1,radiant_team,0.5811,DGG Esports,radiant_team
+0,Headless Horsemens,2443375,Dragon Blood,8629014,3,dire_team,0.6448,Dragon Blood,noresult
+6757256253,Rakuzan,8794067,Celestials,8546012,2,radiant_team,0.7404,Rakuzan,radiant_team
+6757244151,Headless Horsemens,2443375,Dragon Blood,8629014,3,dire_team,0.6448,Dragon Blood,dire_team
+6757261216,Neon Esports,8360138,Atlantis,8538804,1,radiant_team,0.5446,Neon Esports,radiant_team
+6757280003,Sworn Die,8629327,Swift Knights,8629324,1,radiant_team,0.5394,Sworn Die,dire_team
+6757313972,Swift Knights,8629324,Sworn Die,8629327,2,dire_team,0.6023,Sworn Die,radiant_team
+6757312228,IVY,8318683,DGG Esports,8597391,2,dire_team,0.6406,DGG Esports,radiant_team
+6757303813,DEEP RAVAGE,8469455,NINFAW,8746180,1,radiant_team,0.6578,DEEP RAVAGE,dire_team
+6757327856,Atlantis,8538804,Neon Esports,8360138,2,dire_team,0.63,Neon Esports,radiant_team
+6757335824,Rakuzan,8794067,EYE-gaming,8607589,1,radiant_team,0.8458,Rakuzan,radiant_team
+6757372727,IVY,8318683,DGG Esports,8597391,3,dire_team,0.6406,DGG Esports,dire_team
+6757410518,EYE-gaming,8607589,Rakuzan,8794067,2,dire_team,0.8331,Rakuzan,noresult
+6757399908,Atlantis,8538804,Neon Esports,8360138,3,dire_team,0.63,Neon Esports,noresult
