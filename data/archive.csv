@@ -31,5 +31,57 @@ match_id,radiant_team,rad_team_id,dire_team,dire_team_id,map_cnt,winner_side,pro
 6757327856,Atlantis,8538804,Neon Esports,8360138,2,dire_team,0.63,Neon Esports,radiant_team
 6757335824,Rakuzan,8794067,EYE-gaming,8607589,1,radiant_team,0.8458,Rakuzan,radiant_team
 6757372727,IVY,8318683,DGG Esports,8597391,3,dire_team,0.6406,DGG Esports,dire_team
-6757410518,EYE-gaming,8607589,Rakuzan,8794067,2,dire_team,0.8331,Rakuzan,noresult
-6757399908,Atlantis,8538804,Neon Esports,8360138,3,dire_team,0.63,Neon Esports,noresult
+6757410518,EYE-gaming,8607589,Rakuzan,8794067,2,dire_team,0.8331,Rakuzan,radiant_team
+6757399908,Atlantis,8538804,Neon Esports,8360138,3,dire_team,0.63,Neon Esports,dire_team
+6757462613,Deep Ravage,8820397,NINFAW,8746180,3,dire_team,0.6231,NINFAW,radiant_team
+6757433248,Deep Ravage,8820397,NINFAW,8746180,3,dire_team,0.6231,NINFAW,dire_team
+6757455887,Brame,8112124,Nigma Galaxy,7554697,1,radiant_team,0.503,Brame,dire_team
+6757480164,EYE-gaming,8607589,Rakuzan,8794067,3,dire_team,0.8331,Rakuzan,dire_team
+6757492491,Execration,8254145,Summit Gaming,8597183,1,radiant_team,0.5716,Execration,radiant_team
+6757558085,Deep Ravage,8820397,KIBA ARMS,8606358,1,radiant_team,0.5084,Deep Ravage,radiant_team
+6757558053,Celestials,8546012,Shinigami Gaming,8765917,1,radiant_team,0.626,Celestials,radiant_team
+6757581904,Summit Gaming,8597183,Execration,8254145,2,dire_team,0.6343,Execration,dire_team
+6757601380,Nigma Galaxy,7554697,Brame,8112124,2,dire_team,0.5335,Brame,dire_team
+6757687037,Shinigami Gaming,8765917,Celestials,8546012,2,dire_team,0.6353,Celestials,radiant_team
+6757686868,KIBA ARMS,8606358,Deep Ravage,8820397,2,dire_team,0.5113,Deep Ravage,dire_team
+6757769254,Nigma Galaxy,7554697,Brame,8112124,3,dire_team,0.5335,Brame,radiant_team
+6757811039,Celestials,8546012,Shinigami Gaming,8765917,3,radiant_team,0.626,Celestials,radiant_team
+6758491459,Polaris Esports,8525778,Talon,8597976,1,dire_team,0.6092,Talon,dire_team
+6758543489,Swift Knights,8629324,Headless Horsemens,2443375,1,dire_team,0.5288,Headless Horsemens,dire_team
+6758558226,Talon,8597976,Polaris Esports,8525778,2,radiant_team,0.5491,Talon,radiant_team
+6758574617,Headless Horsemens,2443375,Swift Knights,8629324,2,dire_team,0.5008,Swift Knights,radiant_team
+6758591583,its a PRANK,8400307,Dota Geniuses,8336189,1,radiant_team,0.5538,its a PRANK,dire_team
+6758605148,Sworn Die,8629327,Bright Crusaders,8629317,1,dire_team,0.6161,Bright Crusaders,dire_team
+6758612105,RSG,8668460,T1,8214850,1,radiant_team,0.523,RSG,dire_team
+6758621293,Dota Geniuses,8336189,its a PRANK,8400307,2,dire_team,0.5631,its a PRANK,dire_team
+6758637784,Bright Crusaders,8629317,Sworn Die,8629327,2,radiant_team,0.531,Bright Crusaders,radiant_team
+6758646877,its a PRANK,8400307,Dota Geniuses,8336189,3,radiant_team,0.5538,its a PRANK,radiant_team
+6758678163,Dota Geniuses,8336189,its a PRANK,8400307,3,dire_team,0.5631,its a PRANK,radiant_team
+6758672002,Celestials,8546012,EYE-gaming,8607589,1,dire_team,0.5128,EYE-gaming,radiant_team
+6758666843,RSG,8668460,T1,8214850,2,radiant_team,0.523,RSG,dire_team
+6758670469,Dragon Blood,8629014,Flawless Goblins,8629005,1,dire_team,0.5336,Flawless Goblins,dire_team
+6758710170,its a PRANK,8400307,Dota Geniuses,8336189,5,radiant_team,0.5538,its a PRANK,radiant_team
+6758712214,Army Geniuses,8261554,Xerxia,8736661,1,dire_team,0.7389,Xerxia,radiant_team
+6758718509,Flawless Goblins,8629005,Dragon Blood,8629014,2,dire_team,0.5276,Dragon Blood,radiant_team
+6758729760,EYE-gaming,8607589,Celestials,8546012,2,dire_team,0.5643,Celestials,dire_team
+6758763550,Mad Monkeys,8629318,Wiser Warriors,8629315,1,dire_team,0.5467,Wiser Warriors,radiant_team
+6758758966,Army Geniuses,8261554,Xerxia,8736661,2,dire_team,0.7389,Xerxia,dire_team
+6758788515,DEEP RAVAGE,8469455,Celestials,8546012,1,radiant_team,0.7228,DEEP RAVAGE,radiant_team
+6758789673,EYE-gaming,8607589,Rakuzan,8794067,1,dire_team,0.8331,Rakuzan,dire_team
+6758798934,goonsquad,8687717,Team Liquid,2163,1,dire_team,0.5455,Team Liquid,dire_team
+6758804678,Army Geniuses,8261554,Xerxia,8736661,3,dire_team,0.7389,Xerxia,dire_team
+6758815135,Wiser Warriors,8629315,Mad Monkeys,8629318,2,radiant_team,0.5008,Wiser Warriors,radiant_team
+6758838144,Rakuzan,8794067,EYE-gaming,8607589,2,radiant_team,0.8431,Rakuzan,radiant_team
+6758850693,Celestials,8546012,DEEP RAVAGE,8469455,2,dire_team,0.775,DEEP RAVAGE,radiant_team
+6758856714,Mad Monkeys,8629318,Wiser Warriors,8629315,3,dire_team,0.5467,Wiser Warriors,radiant_team
+6758865398,goonsquad,8687717,Team Liquid,2163,2,dire_team,0.5455,Team Liquid,dire_team
+6758886182,Execration,8254145,Neon Esports,8360138,1,radiant_team,0.5086,Execration,radiant_team
+6758897942,DEEP RAVAGE,8469455,Celestials,8546012,3,radiant_team,0.7228,DEEP RAVAGE,radiant_team
+6758952184,Team Secret,1838315,Entity,8605863,1,dire_team,0.5221,Entity,dire_team
+6758955183,Execration,8254145,Neon Esports,8360138,2,radiant_team,0.5086,Execration,dire_team
+6758981098,OTHERS ,8799593,NINFAW,8746180,1,radiant_team,0.7173,OTHERS ,dire_team
+6759027493,Team Secret,1838315,Entity,8605863,2,dire_team,0.5221,Entity,dire_team
+6759054893,NINFAW,8746180,OTHERS ,8799593,2,dire_team,0.7694,OTHERS ,dire_team
+6759045305,Execration,8254145,Neon Esports,8360138,3,radiant_team,0.5086,Execration,dire_team
+6759130793,Nigma Galaxy,7554697,DGG Esports,8597391,1,radiant_team,0.5771,Nigma Galaxy,noresult
+6759128426,OTHERS ,8799593,NINFAW,8746180,3,radiant_team,0.7173,OTHERS ,radiant_team
