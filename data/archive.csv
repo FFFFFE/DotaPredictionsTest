@@ -126,4 +126,10 @@ match_id,radiant_team,rad_team_id,dire_team,dire_team_id,map_cnt,winner_side,pro
 6761073969,Entity,8605863,Team Liquid,2163,1,radiant_team,0.5447,Entity,radiant_team
 6761171063,KBU.US,8606828,Ghostss,8820694,3,radiant_team,0.5382,KBU.US,dire_team
 6761201289,Team Liquid,2163,Entity,8605863,2,dire_team,0.6024,Entity,dire_team
-6761294939,Samba Team,8778008,Qhali,8702318,1,dire_team,0.7791,Qhali,noresult
+6761294939,Samba Team,8778008,Qhali,8702318,1,dire_team,0.7791,Qhali,radiant_team
+6761889806,Polaris Esports,8525778,T1,8214850,2,dire_team,0.5306,T1,radiant_team
+6761879267,Sworn Die,8629327,Flawless Goblins,8629005,1,dire_team,0.6437,Flawless Goblins,radiant_team
+6761927456,Flawless Goblins,8629005,Sworn Die,8629327,2,radiant_team,0.5782,Flawless Goblins,dire_team
+6761951579,Polaris Esports,8525778,T1,8214850,3,dire_team,0.5306,T1,radiant_team
+6761968619,Swift Knights,8629324,Dragon Blood,8629014,1,dire_team,0.6245,Dragon Blood,dire_team
+6762012328,Dragon Blood,8629014,Swift Knights,8629324,2,radiant_team,0.5839,Dragon Blood,noresult
