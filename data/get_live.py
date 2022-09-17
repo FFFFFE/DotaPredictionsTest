@@ -229,14 +229,17 @@ noresult = merged[merged['fact_result'] == 'noresult']
 # Неопубликованные незавершившиеся матчи
 not_posted = noresult[~noresult['match_id'].isin(published)]
 
+# Фильтр команд которых нет в бк
+not_in_bk = ['celestials', 'ninfaw', 'eye-gaming', 'others', 'deep ravage', 'rakuzan', 'shinigami gaming']
 
 for i in not_posted.index:
-    new_message = f"""*{not_posted.loc[i, 'radiant_team']} - {not_posted.loc[i, 'dire_team']}*
+    if not_posted.loc[i, 'radiant_team'].lower() and not_posted.loc[i, 'dire_team'].lower() not in not_in_bk:
+        new_message = f"""*{not_posted.loc[i, 'radiant_team']} - {not_posted.loc[i, 'dire_team']}*
 `ID матча: {not_posted.loc[i, 'match_id']}
 Карта: {not_posted.loc[i, 'map_cnt']}`
 `Прогноз:` *{not_posted.loc[i, 'winner_predict']}*"""
-    send_telegram(new_message)
-    published.append(not_posted.loc[i, 'match_id'])
+        send_telegram(new_message)
+        published.append(not_posted.loc[i, 'match_id'])
 
 
 
