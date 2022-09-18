@@ -196,7 +196,7 @@ merged.to_csv(r"C:\Users\Admin\PycharmProjects\DotaWinnerPrediction\data\archive
 def send_telegram(text: str):
     token = "5447729429:AAF9yxTlohAx75qvtd5gv3mknhRS8xuQ-ts"
     url = "https://api.telegram.org/bot"
-    channel_id = "@betsrenaissance"
+    channel_id = "@renbet"
     url += token
     method = url + "/sendMessage"
 

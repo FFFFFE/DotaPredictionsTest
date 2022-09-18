@@ -132,4 +132,64 @@ match_id,radiant_team,rad_team_id,dire_team,dire_team_id,map_cnt,winner_side,pro
 6761927456,Flawless Goblins,8629005,Sworn Die,8629327,2,radiant_team,0.5782,Flawless Goblins,dire_team
 6761951579,Polaris Esports,8525778,T1,8214850,3,dire_team,0.5306,T1,radiant_team
 6761968619,Swift Knights,8629324,Dragon Blood,8629014,1,dire_team,0.6245,Dragon Blood,dire_team
-6762012328,Dragon Blood,8629014,Swift Knights,8629324,2,radiant_team,0.5839,Dragon Blood,noresult
+6762012328,Dragon Blood,8629014,Swift Knights,8629324,2,radiant_team,0.5839,Dragon Blood,dire_team
+6762084164,Swift Knights,8629324,Dragon Blood,8629014,3,dire_team,0.653,Dragon Blood,dire_team
+6762075696,Talon,8597976,Polaris Esports,8525778,1,radiant_team,0.5665,Talon,dire_team
+6762128119,Wiser Warriors,8629315,Bright Crusaders,8629317,1,dire_team,0.5632,Bright Crusaders,radiant_team
+6762156018,Polaris Esports,8525778,Talon,8597976,2,dire_team,0.6086,Talon,dire_team
+6762194595,Bright Crusaders,8629317,Wiser Warriors,8629315,2,radiant_team,0.5469,Bright Crusaders,radiant_team
+6762237758,Wiser Warriors,8629315,Bright Crusaders,8629317,3,dire_team,0.5632,Bright Crusaders,radiant_team
+6762228497,Shinigami Gaming,8765917,Rakuzan,8794067,1,dire_team,0.9106,Rakuzan,dire_team
+6762249826,Talon,8597976,Polaris Esports,8525778,3,radiant_team,0.5665,Talon,dire_team
+6762284151,TEAM M11,8350517,Young Blood,8718594,1,radiant_team,0.9233,TEAM M11,dire_team
+6762298044,Rakuzan,8794067,Shinigami Gaming,8765917,2,radiant_team,0.8965,Rakuzan,radiant_team
+6762297578,Mad Monkeys,8629318,Headless Horsemens,2443375,1,dire_team,0.5525,Headless Horsemens,dire_team
+6762349545,Headless Horsemens,2443375,Mad Monkeys,8629318,2,radiant_team,0.527,Headless Horsemens,radiant_team
+6762350843,Polaris Esports,8525778,Talon,8597976,4,dire_team,0.6086,Talon,dire_team
+6762379214,Into The Breach,8390848,Team Secret,1838315,3,dire_team,0.6371,Team Secret,dire_team
+6762384124,EYE-gaming,8607589,Rakuzan,8794067,1,dire_team,0.8297,Rakuzan,radiant_team
+6762396433,Celestials,8546012,Deep Ravage,8820397,1,dire_team,0.7812,Deep Ravage,radiant_team
+6762383944,Young Blood,8718594,TEAM M11,8350517,2,dire_team,0.9297,TEAM M11,radiant_team
+6762454812,Polaris Esports,8525778,Talon,8597976,5,dire_team,0.6086,Talon,dire_team
+6762461343,Rakuzan,8794067,EYE-gaming,8607589,2,radiant_team,0.8343,Rakuzan,radiant_team
+6762528270,Deep Ravage,8820397,Celestials,8546012,2,radiant_team,0.7605,Deep Ravage,dire_team
+6762563253,EYE-gaming,8607589,Rakuzan,8794067,3,dire_team,0.8297,Rakuzan,dire_team
+6762588806,Team Secret,1838315,Team Liquid,2163,1,radiant_team,0.5473,Team Secret,dire_team
+6762638918,NecroRaisers,8714128,Slovakia Rejects,8687576,1,dire_team,0.7146,Slovakia Rejects,dire_team
+6762703677,Celestials,8546012,EYE-gaming,8607589,1,radiant_team,0.5353,Celestials,dire_team
+6762691513,OTHERS ,8799593,KIBA ARMS,8606358,1,radiant_team,0.793,OTHERS ,radiant_team
+6762786119,Slovakia Rejects,8687576,NecroRaisers,8714128,2,radiant_team,0.6549,Slovakia Rejects,dire_team
+6762822965,Ravens,8686786,Dreamers Esports,8680612,1,radiant_team,0.664,Ravens,radiant_team
+6762802057,Team Secret,1838315,Team Liquid,2163,2,radiant_team,0.5473,Team Secret,radiant_team
+6762837404,EYE-gaming,8607589,Celestials,8546012,2,dire_team,0.5386,Celestials,dire_team
+6762836657,KIBA ARMS,8606358,OTHERS ,8799593,2,dire_team,0.8032,OTHERS ,dire_team
+6762905037,New FIS,8290971,Anime Enjoyers,8790102,1,dire_team,0.5286,Anime Enjoyers,dire_team
+6762946050,Dreamers Esports,8680612,Ravens,8686786,2,dire_team,0.7151,Ravens,dire_team
+6762923144,NecroRaisers,8714128,Slovakia Rejects,8687576,3,dire_team,0.7146,Slovakia Rejects,dire_team
+6762955136,Celestials,8546012,EYE-gaming,8607589,3,radiant_team,0.5353,Celestials,dire_team
+6762979472,Team Liquid,2163,Team Secret,1838315,3,dire_team,0.5742,Team Secret,dire_team
+6763054204,MINDCAT Esports,8239163,Inae.Rozbíječi,5326189,1,dire_team,0.6265,Inae.Rozbíječi,dire_team
+6763107311,buff anchovy,8737533,BLUE PIKACHU,5020794,1,radiant_team,0.7616,buff anchovy,dire_team
+6763132042,V-Gaming Reborn,8696043,Hot Headed Gaming,8644812,1,dire_team,0.5792,Hot Headed Gaming,dire_team
+6763814094,Execration,8254145,GrindSky Esports,8597594,1,dire_team,0.5321,GrindSky Esports,dire_team
+6763893675,wolf,8746860,Yangon Galacticos,7653080,1,dire_team,0.6189,Yangon Galacticos,dire_team
+6763882138,Execration,8254145,GrindSky Esports,8597594,3,dire_team,0.5321,GrindSky Esports,dire_team
+6763977280,Yangon Galacticos,7653080,wolf,8746860,1,radiant_team,0.5851,Yangon Galacticos,radiant_team
+6764071020,Atomic Esports,8741331,Polaris Esports,8525778,1,dire_team,0.6025,Polaris Esports,dire_team
+6764141405,YNT,8741396,Hot Headed Gaming,8644812,1,dire_team,0.5566,Hot Headed Gaming,radiant_team
+6764158146,Rakuzan,8794067,NINFAW,8746180,1,radiant_team,0.7074,Rakuzan,dire_team
+6764169645,Celestials,8546012,Shinigami Gaming,8765917,1,radiant_team,0.6701,Celestials,dire_team
+6764187699,Atomic Esports,8741331,Polaris Esports,8525778,2,dire_team,0.6025,Polaris Esports,dire_team
+6764246094,NINFAW,8746180,Rakuzan,8794067,2,dire_team,0.766,Rakuzan,dire_team
+6764271552,Shinigami Gaming,8765917,Celestials,8546012,2,dire_team,0.6861,Celestials,dire_team
+6764279889,Purple Paradox,8800176,Yangon Galacticos,7653080,1,dire_team,0.6621,Yangon Galacticos,radiant_team
+6764279837,Hot Headed Gaming,8644812,YNT,8741396,2,radiant_team,0.5313,Hot Headed Gaming,dire_team
+6764290225,Hot Headed Gaming,8644812,YNT,8741396,2,radiant_team,0.5313,Hot Headed Gaming,dire_team
+6764318147,Rakuzan,8794067,NINFAW,8746180,3,radiant_team,0.7074,Rakuzan,radiant_team
+6764333792,Slovakia Rejects,8687576,Inae.Rozbíječi,5326189,1,dire_team,0.6588,Inae.Rozbíječi,dire_team
+6764388527,Yangon Galacticos,7653080,Purple Paradox,8800176,1,radiant_team,0.6367,Yangon Galacticos,noresult
+6764384292,Celestials,8546012,Shinigami Gaming,8765917,3,radiant_team,0.6701,Celestials,noresult
+6764412993,HF,8733748,Hydra,8263841,1,radiant_team,0.7606,HF,noresult
+6764427317,Unique,8616073,YNT,8741396,1,dire_team,0.583,YNT,noresult
+6764423916,Inae.Rozbíječi,5326189,Slovakia Rejects,8687576,2,radiant_team,0.6549,Inae.Rozbíječi,noresult
+6764397793,GrindSky Esports,8597594,Polaris Esports,8525778,1,dire_team,0.5426,Polaris Esports,noresult
