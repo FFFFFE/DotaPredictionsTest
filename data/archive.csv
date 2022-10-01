@@ -382,8 +382,12 @@ match_id,radiant_team,rad_team_id,dire_team,dire_team_id,map_cnt,winner_side,pro
 6784915067,Zorka,8701706,LUNA GAMING,8732747,2,dire_team,0.5567,LUNA GAMING,dire_team
 6784909181,YNT,8741396,No Bounty Hunter,8261397,3,radiant_team,0.5668,YNT,dire_team
 6785008545,OTHERS ,8799593,Shinigami Gaming,8765917,2,radiant_team,0.8883,OTHERS ,dire_team
-6785000968,HF,8733748,Monaspa,7300277,1,radiant_team,0.5505,HF,noresult
+6785000968,HF,8733748,Monaspa,7300277,1,radiant_team,0.5505,HF,radiant_team
 6785027217,Team SMG,8244493,TNC Predator,2108395,2,radiant_team,0.506,Team SMG,radiant_team
-6785032171,EZ KATKA,8769466,Winter Bear,8494848,1,radiant_team,0.5491,EZ KATKA,noresult
+6785032171,EZ KATKA,8769466,Winter Bear,8494848,1,radiant_team,0.5491,EZ KATKA,radiant_team
 6785107456,K-One Primata,8011209,Sneky Snakes,8719159,1,dire_team,0.925,Sneky Snakes,noresult
 6785088114,Team Pinang,8751053,Lektauko,8545203,1,radiant_team,0.9179,Team Pinang,noresult
+6785108028,OTHERS ,8799593,Shinigami Gaming,8765917,3,radiant_team,0.8636,OTHERS ,noresult
+6785117494,Hokori,8131728,Lilgun ,8169775,1,radiant_team,0.5692,Hokori,noresult
+6785154168,Monaspa,7300277,HF,8733748,1,radiant_team,0.5268,Monaspa,noresult
+6785129208,Winter Bear,8494848,EZ KATKA,8769466,2,dire_team,0.5547,EZ KATKA,noresult
