@@ -187,9 +187,203 @@ match_id,radiant_team,rad_team_id,dire_team,dire_team_id,map_cnt,winner_side,pro
 6764290225,Hot Headed Gaming,8644812,YNT,8741396,2,radiant_team,0.5313,Hot Headed Gaming,dire_team
 6764318147,Rakuzan,8794067,NINFAW,8746180,3,radiant_team,0.7074,Rakuzan,radiant_team
 6764333792,Slovakia Rejects,8687576,Inae.Rozbíječi,5326189,1,dire_team,0.6588,Inae.Rozbíječi,dire_team
-6764388527,Yangon Galacticos,7653080,Purple Paradox,8800176,1,radiant_team,0.6367,Yangon Galacticos,noresult
-6764384292,Celestials,8546012,Shinigami Gaming,8765917,3,radiant_team,0.6701,Celestials,noresult
-6764412993,HF,8733748,Hydra,8263841,1,radiant_team,0.7606,HF,noresult
-6764427317,Unique,8616073,YNT,8741396,1,dire_team,0.583,YNT,noresult
-6764423916,Inae.Rozbíječi,5326189,Slovakia Rejects,8687576,2,radiant_team,0.6549,Inae.Rozbíječi,noresult
-6764397793,GrindSky Esports,8597594,Polaris Esports,8525778,1,dire_team,0.5426,Polaris Esports,noresult
+6764388527,Yangon Galacticos,7653080,Purple Paradox,8800176,1,radiant_team,0.6367,Yangon Galacticos,dire_team
+6764384292,Celestials,8546012,Shinigami Gaming,8765917,3,radiant_team,0.6701,Celestials,radiant_team
+6764412993,HF,8733748,Hydra,8263841,1,radiant_team,0.7606,HF,radiant_team
+6764427317,Unique,8616073,YNT,8741396,1,dire_team,0.583,YNT,dire_team
+6764423916,Inae.Rozbíječi,5326189,Slovakia Rejects,8687576,2,radiant_team,0.6549,Inae.Rozbíječi,dire_team
+6764397793,GrindSky Esports,8597594,Polaris Esports,8525778,1,dire_team,0.5426,Polaris Esports,dire_team
+6764513627,Celestials,8546012,Rakuzan,8794067,1,dire_team,0.7946,Rakuzan,dire_team
+6764516102,OTHERS ,8799593,Shinigami Gaming,8765917,1,radiant_team,0.8883,OTHERS ,radiant_team
+6764488436,496 Gaming,8820622,wolf,8746860,1,dire_team,0.8755,wolf,radiant_team
+6764528999,YNT,8741396,Unique,8616073,2,radiant_team,0.5565,YNT,dire_team
+6764526982,GrindSky Esports,8597594,Polaris Esports,8525778,2,dire_team,0.5335,Polaris Esports,dire_team
+6764549401,HF,8733748,Team Blink,8457633,1,radiant_team,0.7197,HF,radiant_team
+6764594329,wolf,8746860,496 Gaming,8820622,1,radiant_team,0.8518,wolf,dire_team
+6764580942,Inae.Rozbíječi,5326189,Slovakia Rejects,8687576,3,radiant_team,0.6454,Inae.Rozbíječi,radiant_team
+6764594710,Shinigami Gaming,8765917,OTHERS ,8799593,2,dire_team,0.912,OTHERS ,dire_team
+6764613635,Unique,8616073,YNT,8741396,3,dire_team,0.6023,YNT,radiant_team
+6764670070,Rakuzan,8794067,Celestials,8546012,2,radiant_team,0.7476,Rakuzan,radiant_team
+6764681586,OUTCASTS,8790769,Острые козырьки-,8721917,1,dire_team,0.9276,Острые козырьки-,dire_team
+6764718990,Inae.Rozbíječi,5326189,Team Young,8069344,1,dire_team,0.5805,Team Young,dire_team
+6764795721,Samba Team,8778008,Dreamers Esports,8680612,1,dire_team,0.7261,Dreamers Esports,radiant_team
+6764795848,Unique,8616073,EZ KATKA,8769466,1,dire_team,0.5557,EZ KATKA,radiant_team
+6764846850,OTHERS ,8799593,Celestials,8546012,1,radiant_team,0.7796,OTHERS ,dire_team
+6764867444,Rakuzan,8794067,Shinigami Gaming,8765917,1,radiant_team,0.8883,Rakuzan,radiant_team
+6764902203,Team Young,8069344,Inae.Rozbíječi,5326189,2,radiant_team,0.542,Team Young,dire_team
+6764925133,EZ KATKA,8769466,Unique,8616073,2,radiant_team,0.5334,EZ KATKA,radiant_team
+6764922277,Celestials,8546012,OTHERS ,8799593,2,dire_team,0.7945,OTHERS ,radiant_team
+6764946282,Dreamers Esports,8680612,Samba Team,8778008,2,radiant_team,0.6617,Dreamers Esports,dire_team
+6765998929,EYE-gaming,8607589,OTHERS ,8799593,2,dire_team,0.8926,OTHERS ,dire_team
+6766041390,Zorka,8701706,Hot Headed Gaming,8644812,1,dire_team,0.5974,Hot Headed Gaming,dire_team
+6766003363,Team Tsunami,8634503,UD VESSUWAN,8168128,1,dire_team,0.5213,UD VESSUWAN,dire_team
+6766069033,X3,8421850,EZ KATKA,8769466,1,dire_team,0.6147,EZ KATKA,radiant_team
+6766076532,UD VESSUWAN,8168128,Team Tsunami,8634503,1,dire_team,0.5335,Team Tsunami,radiant_team
+6766074278,Anime Enjoyers,8790102,V-Gaming Reborn,8696043,2,dire_team,0.531,V-Gaming Reborn,radiant_team
+6766105527,Zorka,8701706,Hot Headed Gaming,8644812,2,dire_team,0.5974,Hot Headed Gaming,radiant_team
+6766086800,OTHERS ,8799593,Shinigami Gaming,8765917,1,radiant_team,0.8883,OTHERS ,radiant_team
+6766163830,Purple Paradox,8800176,496 Gaming,8820622,1,radiant_team,0.9193,Purple Paradox,dire_team
+6766230087,Zorka,8701706,Hot Headed Gaming,8644812,3,dire_team,0.5974,Hot Headed Gaming,dire_team
+6766213173,EZ KATKA,8769466,X3,8421850,2,radiant_team,0.5586,EZ KATKA,dire_team
+6766197453,Shinigami Gaming,8765917,OTHERS ,8799593,2,dire_team,0.912,OTHERS ,dire_team
+6766294628,496 Gaming,8820622,Purple Paradox,8800176,1,dire_team,0.9204,Purple Paradox,dire_team
+6766365777,No Bounty Hunter,8261397,Wayfarers,8310936,1,radiant_team,0.5611,No Bounty Hunter,dire_team
+6766493181,Wayfarers,8310936,No Bounty Hunter,8261397,2,dire_team,0.5924,No Bounty Hunter,dire_team
+6767563150,OTHERS ,8799593,Rakuzan,8794067,1,dire_team,0.553,Rakuzan,radiant_team
+6767553239,X3,8421850,YNT,8741396,3,dire_team,0.6575,YNT,radiant_team
+6767523170,wolf,8746860,Team Tsunami,8634503,1,dire_team,0.5999,Team Tsunami,dire_team
+6767598082,Shinigami Gaming,8765917,EYE-gaming,8607589,2,dire_team,0.6432,EYE-gaming,dire_team
+6767625466,X3,8421850,HF,8733748,1,radiant_team,0.5491,X3,radiant_team
+6767640190,Rakuzan,8794067,OTHERS ,8799593,2,radiant_team,0.5226,Rakuzan,radiant_team
+6767658805,IVY,8318683,EZ KATKA,8769466,1,dire_team,0.6819,EZ KATKA,radiant_team
+6767700314,EYE-gaming,8607589,Shinigami Gaming,8765917,3,radiant_team,0.5853,EYE-gaming,dire_team
+6767740775,Rakuzan,8794067,OTHERS ,8799593,3,radiant_team,0.5226,Rakuzan,dire_team
+6767768301,X3,8421850,HF,8733748,2,radiant_team,0.5491,X3,radiant_team
+6767780281,EZ KATKA,8769466,IVY,8318683,2,radiant_team,0.6263,EZ KATKA,dire_team
+6767845348,OTHERS ,8799593,Celestials,8546012,1,radiant_team,0.7796,OTHERS ,radiant_team
+6767916051,Ooredoo Thunders,8722443,YNT,8741396,1,dire_team,0.6773,YNT,radiant_team
+6767918874,Celestials,8546012,OTHERS ,8799593,2,dire_team,0.7945,OTHERS ,radiant_team
+6767902661,Zorka,8701706,IVY,8318683,1,radiant_team,0.6184,Zorka,radiant_team
+6768010309,YNT,8741396,Ooredoo Thunders,8722443,2,radiant_team,0.6478,YNT,dire_team
+6768024659,Zorka,8701706,IVY,8318683,2,radiant_team,0.6184,Zorka,radiant_team
+6768023355,OTHERS ,8799593,Celestials,8546012,3,radiant_team,0.7796,OTHERS ,dire_team
+6769270535,NINFAW,8746180,Celestials,8546012,1,dire_team,0.5025,Celestials,dire_team
+6769270052,Deep Ravage,8820397,OTHERS ,8799593,1,dire_team,0.6706,OTHERS ,dire_team
+6769264906,Army Geniuses,8261554,Neon Esports,8360138,2,dire_team,0.5774,Neon Esports,radiant_team
+6769229687,Anime Enjoyers,8790102,V-Gaming Reborn,8696043,1,dire_team,0.531,V-Gaming Reborn,radiant_team
+6769371821,OTHERS ,8799593,Deep Ravage,8820397,2,radiant_team,0.6128,OTHERS ,radiant_team
+6769386122,Anime Enjoyers,8790102,V-Gaming Reborn,8696043,2,dire_team,0.531,V-Gaming Reborn,radiant_team
+6769404106,Celestials,8546012,NINFAW,8746180,2,dire_team,0.5213,NINFAW,radiant_team
+6769421953,YNT,8741396,Unique,8616073,1,radiant_team,0.5565,YNT,radiant_team
+6770469383,No Bounty Hunter,8261397,IVY,8318683,3,radiant_team,0.59,No Bounty Hunter,dire_team
+6770472446,Execration,8254145,Neon Esports,8360138,1,radiant_team,0.5123,Execration,dire_team
+6770511917,Purple Paradox,8800176,GrindSky Esports,8597594,1,dire_team,0.7086,GrindSky Esports,dire_team
+6770499322,Flawless Goblins,8629005,Mad Monkeys,8629318,1,radiant_team,0.5628,Flawless Goblins,dire_team
+6770496741,Lilgun ,8169775,KOBOLDS,8469159,1,radiant_team,0.5487,Lilgun ,radiant_team
+6770518852,Celestials,8546012,Shinigami Gaming,8765917,2,radiant_team,0.6619,Celestials,radiant_team
+6770534030,Zorka,8701706,YNT,8741396,1,dire_team,0.5995,YNT,dire_team
+6770549492,X3,8421850,Ooredoo Thunders,8722443,1,radiant_team,0.536,X3,radiant_team
+6770560723,Mad Monkeys,8629318,Flawless Goblins,8629005,3,dire_team,0.6245,Flawless Goblins,dire_team
+6770579190,Neon Esports,8360138,Execration,8254145,2,dire_team,0.54,Execration,dire_team
+6770634476,Ooredoo Thunders,8722443,X3,8421850,2,dire_team,0.5874,X3,dire_team
+6770624511,OTHERS ,8799593,Celestials,8546012,1,radiant_team,0.7796,OTHERS ,dire_team
+6770656894,Zorka,8701706,YNT,8741396,2,dire_team,0.5995,YNT,radiant_team
+6770664738,TNC Predator,2108395,Lilgun ,8169775,1,radiant_team,0.5513,TNC Predator,dire_team
+6770712911,Celestials,8546012,OTHERS ,8799593,2,dire_team,0.7945,OTHERS ,dire_team
+6770738326,Zorka,8701706,YNT,8741396,3,dire_team,0.5995,YNT,radiant_team
+6770809368,OTHERS ,8799593,Celestials,8546012,3,radiant_team,0.7796,OTHERS ,dire_team
+6770818993,Lilgun ,8169775,TNC Predator,2108395,2,dire_team,0.5874,TNC Predator,dire_team
+6770830260,X3,8421850,Brame,8112124,1,dire_team,0.661,Brame,radiant_team
+6770933314,Deep Ravage,8820397,Celestials,8546012,1,radiant_team,0.6351,Deep Ravage,radiant_team
+6770930920,Brame,8112124,X3,8421850,2,radiant_team,0.6435,Brame,radiant_team
+6772015103,Team Tsunami,8634503,GrindSky Esports,8597594,1,dire_team,0.7109,GrindSky Esports,dire_team
+6772043743,Neon Esports,8360138,Lilgun ,8169775,2,radiant_team,0.5446,Neon Esports,radiant_team
+6772040676,Rakuzan,8794067,Deep Ravage,8820397,2,radiant_team,0.6103,Rakuzan,radiant_team
+6772045352,Unique,8616073,Anime Enjoyers,8790102,1,dire_team,0.5319,Anime Enjoyers,radiant_team
+6772134548,Army Geniuses,8261554,Execration,8254145,1,dire_team,0.5874,Execration,radiant_team
+6772141448,Anime Enjoyers,8790102,Unique,8616073,2,radiant_team,0.5061,Anime Enjoyers,radiant_team
+6772142903,OTHERS ,8799593,Deep Ravage,8820397,1,radiant_team,0.6128,OTHERS ,radiant_team
+6772247277,Execration,8254145,Army Geniuses,8261554,2,radiant_team,0.5575,Execration,dire_team
+6772278186,Anime Enjoyers,8790102,Unique,8616073,3,radiant_team,0.5061,Anime Enjoyers,dire_team
+6772277742,Deep Ravage,8820397,OTHERS ,8799593,2,dire_team,0.6706,OTHERS ,dire_team
+6772360145,Ooredoo Thunders,8722443,EZ KATKA,8769466,1,dire_team,0.6597,EZ KATKA,noresult
+6772379606,X3,8421850,Wayfarers,8310936,1,radiant_team,0.548,X3,dire_team
+6772453384,Deep Ravage,8820397,NINFAW,8746180,1,radiant_team,0.595,Deep Ravage,dire_team
+6772489741,X3,8421850,Wayfarers,8310936,2,radiant_team,0.548,X3,dire_team
+6772531657,EZ KATKA,8769466,Ooredoo Thunders,8722443,2,radiant_team,0.5858,EZ KATKA,dire_team
+6773985914,Execration,8254145,GrindSky Esports,8597594,1,dire_team,0.5947,GrindSky Esports,dire_team
+6774032697,Brame,8112124,Unique,8616073,2,radiant_team,0.5793,Brame,dire_team
+6774030787,OTHERS ,8799593,Celestials,8546012,3,radiant_team,0.7796,OTHERS ,dire_team
+6773959275,TNC Predator,2108395,Neon Esports,8360138,1,radiant_team,0.5369,TNC Predator,radiant_team
+6773978533,YNT,8741396,Anime Enjoyers,8790102,2,radiant_team,0.5173,YNT,radiant_team
+6774046744,HF,8733748,Team Empire Hope,6409189,1,dire_team,0.6909,Team Empire Hope,dire_team
+6774077541,Neon Esports,8360138,TNC Predator,2108395,2,dire_team,0.5557,TNC Predator,dire_team
+6774135161,Neon Esports,8360138,TNC Predator,2108395,2,dire_team,0.5557,TNC Predator,dire_team
+6774146528,Celestials,8546012,Shinigami Gaming,8765917,1,radiant_team,0.6619,Celestials,dire_team
+6774157023,YNT,8741396,Wayfarers,8310936,1,radiant_team,0.6184,YNT,dire_team
+6774156951,X3,8421850,No Bounty Hunter,8261397,1,dire_team,0.5604,No Bounty Hunter,radiant_team
+6774191529,Team Empire Hope,6409189,HF,8733748,1,radiant_team,0.657,Team Empire Hope,radiant_team
+6774264041,No Bounty Hunter,8261397,X3,8421850,2,radiant_team,0.5481,No Bounty Hunter,radiant_team
+6774253796,Shinigami Gaming,8765917,Celestials,8546012,2,dire_team,0.7022,Celestials,dire_team
+6774278586,Wayfarers,8310936,YNT,8741396,1,dire_team,0.6804,YNT,dire_team
+6774364927,X3,8421850,No Bounty Hunter,8261397,3,dire_team,0.5604,No Bounty Hunter,dire_team
+6774378904,Celestials,8546012,Shinigami Gaming,8765917,3,radiant_team,0.6619,Celestials,dire_team
+6774391339,Zona Cubil Gamerz,8599346,Dreamers Esports,8680612,1,dire_team,0.5479,Dreamers Esports,dire_team
+6774393395,Lava Esports ,8737621,Ukumari,8760694,1,radiant_team,0.6594,Lava Esports ,radiant_team
+6775898063,Hokori,8131728,Execration,8254145,1,radiant_team,0.5378,Hokori,radiant_team
+6775958901,EYE-gaming,8607589,OTHERS ,8799593,2,dire_team,0.8926,OTHERS ,radiant_team
+6776010637,МОСУ МВД РОССИИ,8549638,Team Mystic,8537908,1,radiant_team,0.6441,МОСУ МВД РОССИИ,radiant_team
+6776074031,IVY,8318683,YNT,8741396,1,dire_team,0.7091,YNT,dire_team
+6776089688,Hot Headed Gaming,8644812,Winter Bear,8494848,1,radiant_team,0.5827,Hot Headed Gaming,dire_team
+6776090718,OTHERS ,8799593,EYE-gaming,8607589,3,radiant_team,0.8549,OTHERS ,radiant_team
+6777368690,Rakuzan,8794067,OTHERS ,8799593,2,radiant_team,0.5226,Rakuzan,radiant_team
+6777373549,Fnatic,350190,Hokori,8131728,2,radiant_team,0.5391,Fnatic,dire_team
+6777383104,Brame,8112124,Winter Bear,8494848,1,radiant_team,0.6247,Brame,radiant_team
+6777454573,OTHERS ,8799593,Rakuzan,8794067,3,dire_team,0.553,Rakuzan,radiant_team
+6777487975,Winter Bear,8494848,Brame,8112124,2,dire_team,0.6407,Brame,radiant_team
+6777497880,Hokori,8131728,Neon Esports,8360138,1,radiant_team,0.5465,Hokori,dire_team
+6777525714,Winter Bear,8494848,Brame,8112124,2,dire_team,0.6407,Brame,radiant_team
+6777538128,No Bounty Hunter,8261397,Ooredoo Thunders,8722443,1,radiant_team,0.5773,No Bounty Hunter,dire_team
+6777547114,Team Solid,8806386,Duck Tales,8736833,1,radiant_team,0.9169,Team Solid,dire_team
+6777578500,OTHERS ,8799593,Shinigami Gaming,8765917,1,radiant_team,0.8883,OTHERS ,radiant_team
+6777627743,No Bounty Hunter,8261397,Ooredoo Thunders,8722443,1,radiant_team,0.5773,No Bounty Hunter,dire_team
+6777637245,Neon Esports,8360138,Hokori,8131728,2,dire_team,0.5937,Hokori,dire_team
+6777656957,Team Solid,8806386,Duck Tales,8736833,1,radiant_team,0.9169,Team Solid,dire_team
+6777649419,Winter Bear,8494848,Brame,8112124,3,dire_team,0.6407,Brame,dire_team
+6777645861,Zorka,8701706,Anime Enjoyers,8790102,1,dire_team,0.5723,Anime Enjoyers,dire_team
+6777689469,Shinigami Gaming,8765917,OTHERS ,8799593,2,dire_team,0.912,OTHERS ,radiant_team
+6777751320,Unique,8616073,IVY,8318683,1,radiant_team,0.5981,Unique,dire_team
+6777749126,Anime Enjoyers,8790102,Zorka,8701706,2,radiant_team,0.5487,Anime Enjoyers,radiant_team
+6777798822,OTHERS ,8799593,Shinigami Gaming,8765917,3,radiant_team,0.8883,OTHERS ,noresult
+6778799957,Winter Bear,8494848,No Bounty Hunter,8261397,3,dire_team,0.5335,No Bounty Hunter,dire_team
+6778826603,TEAM M11,8350517,GrindSky Esports,8597594,1,dire_team,0.6871,GrindSky Esports,radiant_team
+6778840255,Wayfarers,8310936,HF,8733748,1,radiant_team,0.5105,Wayfarers,dire_team
+6778850086,GrindSky Esports,8597594,TEAM M11,8350517,1,radiant_team,0.625,GrindSky Esports,radiant_team
+6778845177,BOOM Esports,7732977,Neon Esports,8360138,1,radiant_team,0.5863,BOOM Esports,radiant_team
+6778864280,Shinigami Gaming,8765917,NINFAW,8746180,1,dire_team,0.768,NINFAW,dire_team
+6778871001,EZ KATKA,8769466,YNT,8741396,1,dire_team,0.5805,YNT,dire_team
+6778917325,Wayfarers,8310936,HF,8733748,2,radiant_team,0.5105,Wayfarers,radiant_team
+6778936607,BOOM Esports,7732977,Neon Esports,8360138,2,radiant_team,0.5863,BOOM Esports,radiant_team
+6778934812,NINFAW,8746180,Shinigami Gaming,8765917,2,radiant_team,0.6896,NINFAW,dire_team
+6778961293,NINFAW,8746180,Shinigami Gaming,8765917,2,radiant_team,0.6896,NINFAW,dire_team
+6778984939,YNT,8741396,EZ KATKA,8769466,2,radiant_team,0.542,YNT,dire_team
+6779027611,Hokori,8131728,Army Geniuses,8261554,1,radiant_team,0.5874,Hokori,radiant_team
+6779051405,Wayfarers,8310936,HF,8733748,3,radiant_team,0.5105,Wayfarers,radiant_team
+6779049326,Ooredoo Thunders,8722443,Unique,8616073,1,dire_team,0.635,Unique,dire_team
+6779049756,Shinigami Gaming,8765917,NINFAW,8746180,3,dire_team,0.768,NINFAW,dire_team
+6779093167,YNT,8741396,EZ KATKA,8769466,3,radiant_team,0.542,YNT,dire_team
+6779153625,Army Geniuses,8261554,Hokori,8131728,2,dire_team,0.6468,Hokori,dire_team
+6779175087,Unique,8616073,Ooredoo Thunders,8722443,1,radiant_team,0.5794,Unique,dire_team
+6780515972,Wayfarers,8310936,Duck Tales,8736833,1,radiant_team,0.5009,Wayfarers,radiant_team
+6780518304,Ooredoo Thunders,8722443,Team Empire Hope,6409189,1,dire_team,0.6822,Team Empire Hope,radiant_team
+6780494210,Shinigami Gaming,8765917,EYE-gaming,8607589,2,dire_team,0.6432,EYE-gaming,radiant_team
+6780418872,Fnatic,350190,Execration,8254145,1,radiant_team,0.5752,Fnatic,radiant_team
+6780469932,IVY,8318683,YNT,8741396,2,dire_team,0.7091,YNT,dire_team
+6780567115,Execration,8254145,Fnatic,350190,2,dire_team,0.6256,Fnatic,radiant_team
+6781764351,OTHERS ,8799593,Rakuzan,8794067,3,dire_team,0.553,Rakuzan,dire_team
+6781736459,Team SMG,8244493,Hokori,8131728,1,dire_team,0.5794,Hokori,dire_team
+6781721804,TEAM M11,8350517,Execration,8254145,1,dire_team,0.636,Execration,dire_team
+6781808589,GrindSky Esports,8597594,Purple Paradox,8800176,1,radiant_team,0.6732,GrindSky Esports,radiant_team
+6781798316,Monaspa,7300277,YNT,8741396,1,dire_team,0.7101,YNT,dire_team
+6781821806,EYE-gaming,8607589,Rakuzan,8794067,1,dire_team,0.8262,Rakuzan,dire_team
+6781816113,Team SMG,8244493,Hokori,8131728,2,dire_team,0.5794,Hokori,dire_team
+6781908842,Rakuzan,8794067,EYE Gaming,5635538,2,radiant_team,0.7336,Rakuzan,radiant_team
+6781920618,Purple Paradox,8800176,GrindSky Esports,8597594,1,dire_team,0.7086,GrindSky Esports,dire_team
+6781907349,Execration,8254145,TNC Predator,2108395,1,dire_team,0.5147,TNC Predator,radiant_team
+6781941110,YNT,8741396,Monaspa,7300277,2,radiant_team,0.6974,YNT,dire_team
+6782031253,Execration,8254145,TNC Predator,2108395,2,dire_team,0.5147,TNC Predator,radiant_team
+6782046778,YNT,8741396,Monaspa,7300277,3,radiant_team,0.6974,YNT,dire_team
+6782067518,Purple Paradox,8800176,GrindSky Esports,8597594,1,dire_team,0.7086,GrindSky Esports,dire_team
+6782100250,Shinigami Gaming,8765917,EYE Gaming,5635538,1,dire_team,0.7379,EYE Gaming,radiant_team
+6782133958,Ooredoo Thunders,8722443,IVY,8318683,1,dire_team,0.5403,IVY,radiant_team
+6783375532,Ooredoo Thunders,8722443,Monaspa,7300277,2,dire_team,0.5025,Monaspa,radiant_team
+6784931676,TNC Predator,2108395,Team SMG,8244493,1,dire_team,0.5324,Team SMG,dire_team
+6784914933,Shinigami Gaming,8765917,OTHERS ,8799593,1,dire_team,0.912,OTHERS ,dire_team
+6784915067,Zorka,8701706,LUNA GAMING,8732747,2,dire_team,0.5567,LUNA GAMING,dire_team
+6784909181,YNT,8741396,No Bounty Hunter,8261397,3,radiant_team,0.5668,YNT,dire_team
+6785008545,OTHERS ,8799593,Shinigami Gaming,8765917,2,radiant_team,0.8883,OTHERS ,dire_team
+6785000968,HF,8733748,Monaspa,7300277,1,radiant_team,0.5505,HF,noresult
+6785027217,Team SMG,8244493,TNC Predator,2108395,2,radiant_team,0.506,Team SMG,radiant_team
+6785032171,EZ KATKA,8769466,Winter Bear,8494848,1,radiant_team,0.5491,EZ KATKA,noresult
+6785107456,K-One Primata,8011209,Sneky Snakes,8719159,1,dire_team,0.925,Sneky Snakes,noresult
+6785088114,Team Pinang,8751053,Lektauko,8545203,1,radiant_team,0.9179,Team Pinang,noresult
