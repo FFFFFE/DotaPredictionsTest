@@ -45,9 +45,6 @@ else:
         st.error('Перезагрузите страницу')
     else:
         st.markdown('## Матчи, идущие в настоящий момент')
-        st.write('Получаю из Steam API онлайн идущие матчи')
-        st.write('Делаю для них предсказание победителя с помощью предобученой')
-        st.write('Публикую прогноз в телеграм канал')
 
         live_df = live_df[important_cols]
         live_df = live_df.rename(columns={'radiant_team.team_name': 'radiant_team', 'dire_team.team_name': 'dire_team',
@@ -68,3 +65,8 @@ else:
                                                                     [x['winner_side'] == 'dire_team']), axis=1).tolist()
 
             st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability']])
+
+        st.markdown('### Что здесь происходит?')
+        st.markdown('- Получаю из Steam API онлайн идущие матчи')
+        st.markdown('- Делаю для них предсказание победителя с помощью предобученой модели')
+        st.markdown('- Публикую прогноз в телеграм канал')
