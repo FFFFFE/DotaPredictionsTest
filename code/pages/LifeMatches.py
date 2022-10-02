@@ -66,6 +66,7 @@ else:
 
             st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability']])
 
+        st.write('##')
         st.markdown('### Что здесь происходит?')
         st.markdown('- Получаю из Steam API онлайн идущие матчи')
         st.markdown('- Делаю для них предсказание победителя с помощью предобученой модели')
