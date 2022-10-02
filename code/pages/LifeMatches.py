@@ -69,14 +69,14 @@ else:
             st.info('Сейчас нет онлайн профессиональных матчей')
             st_lottie(lottie_empty, height=400, key="coding")
         else:
-            filtered_df[['winner_side', 'probability']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'],
-                                                                                        x['dire_team']), axis=1).tolist()
+            filtered_df[['winner_side', 'Вероятность победы']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'],
+                                                                                    x['dire_team']), axis=1).tolist()
             filtered_df['winner_side'] = filtered_df['winner_side'].apply(lambda x: ["dire_team", "radiant_team"][int(x)])
 
-            filtered_df['winner_predict'] = filtered_df.apply(lambda x: ([x['radiant_team'], x['dire_team']]
+            filtered_df['Предсказание победителя'] = filtered_df.apply(lambda x: ([x['radiant_team'], x['dire_team']]
                                                                     [x['winner_side'] == 'dire_team']), axis=1).tolist()
 
-            st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'winner_predict', 'probability']])
+            st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'Предсказание победителя', 'Вероятность победы']])
 
         st.write('##')
         st.markdown('### Что здесь происходит?')
