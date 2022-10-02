@@ -45,10 +45,12 @@ with st.container():
     with left_column:
         st.write('##')
         st.markdown("## Предсказание победителя в Dota 2")
-        st.write("""Модель машинного обучения основываясь на исторических данных делает предсказание используя признаки доступные перед игрой""")
+        st.write("""Модель машинного обучения, основываясь 
+        на исторических данных, делает предсказание,
+        используя признаки доступные перед игрой""")
         st.write("Выберите команды, чтобы получить прогноз")
     with right_column:
-        st_lottie(lottie_coding, height=250, key="coding")
+        st_lottie(lottie_coding, height=300, key="coding")
 
 with st.container():
     left_column, right_column = st.columns(2)
