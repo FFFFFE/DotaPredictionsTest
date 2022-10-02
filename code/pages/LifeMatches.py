@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from numpy import nan
 from catboost import CatBoostClassifier
+from streamlit_lottie import st_lottie
 import requests
 import json
 import os
@@ -24,7 +25,7 @@ def load_lottieurl(url):
     return r.json()
 
 
-lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_bhw1ul4g.json")
+lottie_error = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_bhw1ul4g.json")
 
 
 from_file = CatBoostClassifier()
@@ -52,10 +53,10 @@ else:
 
     if len(set(important_cols) - set(live_df.columns)) != 0:
         st.error('Перезагрузите страницу')
-        st_lottie(lottie_coding, height=250, key="coding")
+        st_lottie(lottie_error, height=250, key="coding")
     else:
         st.markdown('## Матчи, идущие в настоящий момент')
-        st_lottie(lottie_coding, height=250, key="coding")
+        st_lottie(lottie_error, height=250, key="coding")
 
         live_df = live_df[important_cols]
         live_df = live_df.rename(columns={'radiant_team.team_name': 'radiant_team', 'dire_team.team_name': 'dire_team',
