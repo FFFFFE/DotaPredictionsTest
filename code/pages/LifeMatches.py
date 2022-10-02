@@ -26,7 +26,7 @@ def load_lottieurl(url):
 
 
 lottie_error = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_bhw1ul4g.json")
-
+lottie_empty = load_lottieurl("https://assets8.lottiefiles.com/private_files/lf30_e3pteeho.json")
 
 from_file = CatBoostClassifier()
 clf = from_file.load_model(os.path.abspath("data/model_eval.cbm"))
@@ -67,6 +67,7 @@ else:
         filtered_df.reset_index(drop=True, inplace=True)
         if len(filtered_df) == 0:
             st.info('Сейчас нет онлайн профессиональных матчей')
+            st_lottie(lottie_empty, height=400, key="coding")
         else:
             filtered_df[['winner_side', 'probability']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'],
                                                                                         x['dire_team']), axis=1).tolist()
