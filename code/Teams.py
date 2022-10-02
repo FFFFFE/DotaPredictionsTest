@@ -50,7 +50,6 @@ with st.container():
         st_lottie(lottie_coding, height=250, key="coding")
 
 with st.container():
-    # st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
         rad_team = st.selectbox("Команда Radiant: ", teams_list[0:2:-1] + teams_list[2:])

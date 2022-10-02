@@ -17,6 +17,15 @@ def make_predict_upd(rad_team, dire_team):
     probability = round(max(clf.predict(new_match, prediction_type='Probability')), 4)
     return clf.predict(new_match), probability
 
+def load_lottieurl(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
+
+
+lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_bhw1ul4g.json")
+
 
 from_file = CatBoostClassifier()
 clf = from_file.load_model(os.path.abspath("data/model_eval.cbm"))
@@ -43,8 +52,10 @@ else:
 
     if len(set(important_cols) - set(live_df.columns)) != 0:
         st.error('Перезагрузите страницу')
+        st_lottie(lottie_coding, height=250, key="coding")
     else:
         st.markdown('## Матчи, идущие в настоящий момент')
+        st_lottie(lottie_coding, height=250, key="coding")
 
         live_df = live_df[important_cols]
         live_df = live_df.rename(columns={'radiant_team.team_name': 'radiant_team', 'dire_team.team_name': 'dire_team',
