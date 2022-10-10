@@ -9,6 +9,9 @@ import os
 
 
 def make_predict_upd(rad_team, dire_team):
+    if rad_team not in teams_dict or dire_team not in teams_dict:
+        return '-', '-'
+
     rad_team_id, dire_team_id = teams_dict[rad_team], teams_dict[dire_team]
 
     teams_rating_ratio = teamid_stats[rad_team_id][0] / teamid_stats[dire_team_id][0]
