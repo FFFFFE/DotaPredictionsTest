@@ -10,7 +10,7 @@ import os
 
 def make_predict_upd(rad_team, dire_team):
     if rad_team not in teams_dict or dire_team not in teams_dict:
-        return '-', '-'
+        return 9999, 'Нет прогноза'
 
     rad_team_id, dire_team_id = teams_dict[rad_team], teams_dict[dire_team]
 
