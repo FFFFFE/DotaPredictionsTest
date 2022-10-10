@@ -10,7 +10,7 @@ import os
 
 def make_predict_upd(rad_team, dire_team):
     if rad_team not in teams_dict or dire_team not in teams_dict:
-        return 9999, 'Нет прогноза'
+        return 0, 'Нет прогноза'
 
     rad_team_id, dire_team_id = teams_dict[rad_team], teams_dict[dire_team]
 
@@ -74,10 +74,12 @@ else:
         else:
             filtered_df[['winner_side', 'Вероятность победы']] = filtered_df.apply(lambda x: make_predict_upd(x['radiant_team'],
                                                                                     x['dire_team']), axis=1).tolist()
+
             filtered_df['winner_side'] = filtered_df['winner_side'].apply(lambda x: ["dire_team", "radiant_team"][int(x)])
 
             filtered_df['Предсказание победителя'] = filtered_df.apply(lambda x: ([x['radiant_team'], x['dire_team']]
                                                                     [x['winner_side'] == 'dire_team']), axis=1).tolist()
+
 
             st.dataframe(filtered_df[['match_id', 'radiant_team', 'dire_team', 'Предсказание победителя', 'Вероятность победы']])
 
